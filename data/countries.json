@@ -1,0 +1,92 @@
+{
+  "Argentina": {
+    "flag": "🇦🇷",
+    "primary": "#6cb1e1",
+    "secondary": "#ffffff"
+  },
+  "Belgium": {
+    "flag": "🇧🇪",
+    "primary": "#c8102e",
+    "secondary": "#fdda24"
+  },
+  "Brazil": {
+    "flag": "🇧🇷",
+    "primary": "#ffd700",
+    "secondary": "#009b3a"
+  },
+  "Colombia": {
+    "flag": "🇨🇴",
+    "primary": "#fcd116",
+    "secondary": "#003893"
+  },
+  "Croatia": {
+    "flag": "🇭🇷",
+    "primary": "#d11e2a",
+    "secondary": "#ffffff"
+  },
+  "England": {
+    "flag": "🏴",
+    "primary": "#ffffff",
+    "secondary": "#cf142b"
+  },
+  "France": {
+    "flag": "🇫🇷",
+    "primary": "#0055a4",
+    "secondary": "#ef4135"
+  },
+  "Germany": {
+    "flag": "🇩🇪",
+    "primary": "#111111",
+    "secondary": "#dd0000"
+  },
+  "Italy": {
+    "flag": "🇮🇹",
+    "primary": "#0066b3",
+    "secondary": "#ffffff"
+  },
+  "Morocco": {
+    "flag": "🇲🇦",
+    "primary": "#c1272d",
+    "secondary": "#006233"
+  },
+  "Netherlands": {
+    "flag": "🇳🇱",
+    "primary": "#ff6200",
+    "secondary": "#21468b"
+  },
+  "Peru": {
+    "flag": "🇵🇪",
+    "primary": "#d91023",
+    "secondary": "#ffffff"
+  },
+  "Portugal": {
+    "flag": "🇵🇹",
+    "primary": "#da291c",
+    "secondary": "#046a38"
+  },
+  "South Korea": {
+    "flag": "🇰🇷",
+    "primary": "#cd2e3a",
+    "secondary": "#0047a0"
+  },
+  "Spain": {
+    "flag": "🇪🇸",
+    "primary": "#aa151b",
+    "secondary": "#f1bf00"
+  },
+  "Turkey": {
+    "flag": "🇹🇷",
+    "primary": "#e30a17",
+    "secondary": "#ffffff"
+  },
+  "Uruguay": {
+    "flag": "🇺🇾",
+    "primary": "#5b9bd5",
+    "secondary": "#ffffff"
+  },
+  "West Germany": {
+    "flag": "🇩🇪",
+    "primary": "#111111",
+    "secondary": "#dd0000"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-06-11T18:27:04.107Z",
+  "totalCards": 464,
+  "tournaments": [
+    {
+      "year": 1970,
+      "host": "Mexico",
+      "file": "tournaments/1970.json",
+      "cardCount": 76
+    },
+    {
+      "year": 1986,
+      "host": "Mexico",
+      "file": "tournaments/1986.json",
+      "cardCount": 71
+    },
+    {
+      "year": 1998,
+      "host": "France",
+      "file": "tournaments/1998.json",
+      "cardCount": 76
+    },
+    {
+      "year": 2002,
+      "host": "Korea/Japan",
+      "file": "tournaments/2002.json",
+      "cardCount": 71
+    },
+    {
+      "year": 2014,
+      "host": "Brazil",
+      "file": "tournaments/2014.json",
+      "cardCount": 73
+    },
+    {
+      "year": 2022,
+      "host": "Qatar",
+      "file": "tournaments/2022.json",
+      "cardCount": 97
+    }
+  ]
+}

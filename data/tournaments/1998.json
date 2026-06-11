@@ -1,0 +1,1787 @@
+{
+  "year": 1998,
+  "host": "France",
+  "cards": [
+    {
+      "id": "fabien-barthez-1998",
+      "name": "Fabien Barthez",
+      "country": "France",
+      "year": 1998,
+      "position": "GK",
+      "stage": "Champion",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 627,
+        "cleanSheets": 4,
+        "savesPerGame": 3.7,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "lilian-thuram-1998",
+      "name": "Lilian Thuram",
+      "country": "France",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 596,
+        "tacklesPerGame": 3.4,
+        "interceptionsPerGame": 2.8,
+        "cleanSheets": 4,
+        "goalsScored": 2
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "laurent-blanc-1998",
+      "name": "Laurent Blanc",
+      "country": "France",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 6,
+        "minutes": 499,
+        "tacklesPerGame": 3.4,
+        "interceptionsPerGame": 2.8,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "marcel-desailly-1998",
+      "name": "Marcel Desailly",
+      "country": "France",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 498,
+        "tacklesPerGame": 4,
+        "interceptionsPerGame": 3.1,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "bixente-lizarazu-1998",
+      "name": "Bixente Lizarazu",
+      "country": "France",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 7,
+        "minutes": 578,
+        "tacklesPerGame": 3.1,
+        "interceptionsPerGame": 2.5,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "didier-deschamps-1998",
+      "name": "Didier Deschamps",
+      "country": "France",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 525,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 3.2,
+        "tacklesPerGame": 1.9
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary",
+      "captain": true
+    },
+    {
+      "id": "emmanuel-petit-1998",
+      "name": "Emmanuel Petit",
+      "country": "France",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 564,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.7,
+        "tacklesPerGame": 2.5
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "finalGoalscorer": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "christian-karembeu-1998",
+      "name": "Christian Karembeu",
+      "country": "France",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 616,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.1,
+        "tacklesPerGame": 1.8
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "zinedine-zidane-1998",
+      "name": "Zinedine Zidane",
+      "country": "France",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 7,
+        "minutes": 629,
+        "goals": 2,
+        "assists": 1,
+        "keyPassesPerGame": 3.4,
+        "tacklesPerGame": 2.6
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "finalGoalscorer": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "youri-djorkaeff-1998",
+      "name": "Youri Djorkaeff",
+      "country": "France",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 524,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.5,
+        "tacklesPerGame": 2.4
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "stephane-guivarch-1998",
+      "name": "Stéphane Guivarc’h",
+      "country": "France",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 581,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 2,
+        "minutesPerGoal": 581
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "thierry-henry-1998",
+      "name": "Thierry Henry",
+      "country": "France",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": false,
+      "age": 26,
+      "stats": {
+        "matches": 4,
+        "minutes": 158,
+        "goals": 3,
+        "assists": 1,
+        "shotsOnTarget": 9,
+        "minutesPerGoal": 53
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "david-trezeguet-1998",
+      "name": "David Trezeguet",
+      "country": "France",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": false,
+      "age": 31,
+      "stats": {
+        "matches": 2,
+        "minutes": 82,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 82
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "christophe-dugarry-1998",
+      "name": "Christophe Dugarry",
+      "country": "France",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": false,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 135,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 135
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "patrick-vieira-1998",
+      "name": "Patrick Vieira",
+      "country": "France",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": false,
+      "age": 26,
+      "stats": {
+        "matches": 2,
+        "minutes": 70,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.5,
+        "tacklesPerGame": 2.6
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "robert-pires-1998",
+      "name": "Robert Pirès",
+      "country": "France",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": false,
+      "age": 31,
+      "stats": {
+        "matches": 4,
+        "minutes": 127,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.5,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "claudio-taffarel-1998",
+      "name": "Cláudio Taffarel",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "GK",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 554,
+        "cleanSheets": 3,
+        "savesPerGame": 4.4,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "cafu-1998",
+      "name": "Cafu",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 517,
+        "tacklesPerGame": 3.7,
+        "interceptionsPerGame": 3,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "aldair-1998",
+      "name": "Aldair",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 6,
+        "minutes": 478,
+        "tacklesPerGame": 3.3,
+        "interceptionsPerGame": 2.8,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "junior-baiano-1998",
+      "name": "Júnior Baiano",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 523,
+        "tacklesPerGame": 2.5,
+        "interceptionsPerGame": 2.5,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "roberto-carlos-1998",
+      "name": "Roberto Carlos",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 488,
+        "tacklesPerGame": 3.6,
+        "interceptionsPerGame": 2.7,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "dunga-1998",
+      "name": "Dunga",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 485,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.6,
+        "tacklesPerGame": 2.6
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare",
+      "captain": true
+    },
+    {
+      "id": "cesar-sampaio-1998",
+      "name": "César Sampaio",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 624,
+        "goals": 2,
+        "assists": 0,
+        "keyPassesPerGame": 2.2,
+        "tacklesPerGame": 1.7
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "rivaldo-1998",
+      "name": "Rivaldo",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 475,
+        "goals": 3,
+        "assists": 3,
+        "keyPassesPerGame": 3.7,
+        "tacklesPerGame": 2.8
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "leonardo-1998",
+      "name": "Leonardo",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 577,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.1,
+        "tacklesPerGame": 2.2
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "ronaldo-1998",
+      "name": "Ronaldo",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 7,
+        "minutes": 547,
+        "goals": 4,
+        "assists": 3,
+        "shotsOnTarget": 11,
+        "minutesPerGoal": 137
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "goldenBall": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "bebeto-1998",
+      "name": "Bebeto",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 609,
+        "goals": 3,
+        "assists": 0,
+        "shotsOnTarget": 8,
+        "minutesPerGoal": 203
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "denilson-1998",
+      "name": "Denílson",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": false,
+      "age": 31,
+      "stats": {
+        "matches": 1,
+        "minutes": 36,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 4,
+        "minutesPerGoal": 36
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "emerson-1998",
+      "name": "Emerson",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": false,
+      "age": 27,
+      "stats": {
+        "matches": 2,
+        "minutes": 79,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.4,
+        "tacklesPerGame": 2
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "ze-roberto-1998",
+      "name": "Zé Roberto",
+      "country": "Brazil",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": false,
+      "age": 25,
+      "stats": {
+        "matches": 3,
+        "minutes": 111,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.5,
+        "tacklesPerGame": 1.5
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "drazen-ladic-1998",
+      "name": "Dražen Ladić",
+      "country": "Croatia",
+      "year": 1998,
+      "position": "GK",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 605,
+        "cleanSheets": 2,
+        "savesPerGame": 3.9,
+        "goalsAgainst": 5
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "igor-stimac-1998",
+      "name": "Igor Štimac",
+      "country": "Croatia",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 7,
+        "minutes": 587,
+        "tacklesPerGame": 2.3,
+        "interceptionsPerGame": 2.5,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "slaven-bilic-1998",
+      "name": "Slaven Bilić",
+      "country": "Croatia",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 526,
+        "tacklesPerGame": 3.6,
+        "interceptionsPerGame": 2.5,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "dario-simic-1998",
+      "name": "Dario Šimić",
+      "country": "Croatia",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 507,
+        "tacklesPerGame": 2.9,
+        "interceptionsPerGame": 2.5,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "robert-jarni-1998",
+      "name": "Robert Jarni",
+      "country": "Croatia",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 523,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 3,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "aljosa-asanovic-1998",
+      "name": "Aljoša Asanović",
+      "country": "Croatia",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 519,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 2.7,
+        "tacklesPerGame": 2.3
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "robert-prosinecki-1998",
+      "name": "Robert Prosinečki",
+      "country": "Croatia",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 6,
+        "minutes": 491,
+        "goals": 2,
+        "assists": 1,
+        "keyPassesPerGame": 3.3,
+        "tacklesPerGame": 2.2
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "zvonimir-boban-1998",
+      "name": "Zvonimir Boban",
+      "country": "Croatia",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 507,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.8,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon",
+      "captain": true
+    },
+    {
+      "id": "mario-stanic-1998",
+      "name": "Mario Stanić",
+      "country": "Croatia",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 7,
+        "minutes": 562,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 1.9,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "davor-suker-1998",
+      "name": "Davor Šuker",
+      "country": "Croatia",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 7,
+        "minutes": 603,
+        "goals": 6,
+        "assists": 1,
+        "shotsOnTarget": 14,
+        "minutesPerGoal": 101
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "goldenBoot": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "goran-vlaovic-1998",
+      "name": "Goran Vlaović",
+      "country": "Croatia",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 518,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 518
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "edwin-van-der-sar-1998",
+      "name": "Edwin van der Sar",
+      "country": "Netherlands",
+      "year": 1998,
+      "position": "GK",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 490,
+        "cleanSheets": 2,
+        "savesPerGame": 3.7,
+        "goalsAgainst": 3
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "michael-reiziger-1998",
+      "name": "Michael Reiziger",
+      "country": "Netherlands",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 608,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "jaap-stam-1998",
+      "name": "Jaap Stam",
+      "country": "Netherlands",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 539,
+        "tacklesPerGame": 3.1,
+        "interceptionsPerGame": 2.5,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "frank-de-boer-1998",
+      "name": "Frank de Boer",
+      "country": "Netherlands",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 518,
+        "tacklesPerGame": 2.9,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "arthur-numan-1998",
+      "name": "Arthur Numan",
+      "country": "Netherlands",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 7,
+        "minutes": 558,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "edgar-davids-1998",
+      "name": "Edgar Davids",
+      "country": "Netherlands",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 6,
+        "minutes": 479,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.9,
+        "tacklesPerGame": 2.2
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "phillip-cocu-1998",
+      "name": "Phillip Cocu",
+      "country": "Netherlands",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 536,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 2.7,
+        "tacklesPerGame": 1.9
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "ronald-de-boer-1998",
+      "name": "Ronald de Boer",
+      "country": "Netherlands",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 473,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.2,
+        "tacklesPerGame": 1.9
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "dennis-bergkamp-1998",
+      "name": "Dennis Bergkamp",
+      "country": "Netherlands",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 6,
+        "minutes": 481,
+        "goals": 3,
+        "assists": 1,
+        "shotsOnTarget": 10,
+        "minutesPerGoal": 160
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "patrick-kluivert-1998",
+      "name": "Patrick Kluivert",
+      "country": "Netherlands",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 572,
+        "goals": 4,
+        "assists": 1,
+        "shotsOnTarget": 12,
+        "minutesPerGoal": 143
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "marc-overmars-1998",
+      "name": "Marc Overmars",
+      "country": "Netherlands",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 539,
+        "goals": 1,
+        "assists": 1,
+        "shotsOnTarget": 7,
+        "minutesPerGoal": 539
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "boudewijn-zenden-1998",
+      "name": "Boudewijn Zenden",
+      "country": "Netherlands",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": false,
+      "age": 28,
+      "stats": {
+        "matches": 4,
+        "minutes": 104,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.4,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "gianluca-pagliuca-1998",
+      "name": "Gianluca Pagliuca",
+      "country": "Italy",
+      "year": 1998,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 5,
+        "minutes": 419,
+        "cleanSheets": 3,
+        "savesPerGame": 3.4,
+        "goalsAgainst": 3
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "giuseppe-bergomi-1998",
+      "name": "Giuseppe Bergomi",
+      "country": "Italy",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 359,
+        "tacklesPerGame": 2.7,
+        "interceptionsPerGame": 2.8,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "fabio-cannavaro-1998",
+      "name": "Fabio Cannavaro",
+      "country": "Italy",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 4,
+        "minutes": 358,
+        "tacklesPerGame": 3.7,
+        "interceptionsPerGame": 2.9,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "paolo-maldini-1998",
+      "name": "Paolo Maldini",
+      "country": "Italy",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 4,
+        "minutes": 352,
+        "tacklesPerGame": 4.1,
+        "interceptionsPerGame": 2.7,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common",
+      "captain": true
+    },
+    {
+      "id": "alessandro-costacurta-1998",
+      "name": "Alessandro Costacurta",
+      "country": "Italy",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 355,
+        "tacklesPerGame": 3.3,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "dino-baggio-1998",
+      "name": "Dino Baggio",
+      "country": "Italy",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 4,
+        "minutes": 318,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.2,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "demetrio-albertini-1998",
+      "name": "Demetrio Albertini",
+      "country": "Italy",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 5,
+        "minutes": 444,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.6,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "luigi-di-biagio-1998",
+      "name": "Luigi Di Biagio",
+      "country": "Italy",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 4,
+        "minutes": 359,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.2,
+        "tacklesPerGame": 2.2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "gianluca-pessotto-1998",
+      "name": "Gianluca Pessotto",
+      "country": "Italy",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 5,
+        "minutes": 417,
+        "tacklesPerGame": 2.7,
+        "interceptionsPerGame": 1.9,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "roberto-baggio-1998",
+      "name": "Roberto Baggio",
+      "country": "Italy",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 5,
+        "minutes": 416,
+        "goals": 2,
+        "assists": 2,
+        "shotsOnTarget": 8,
+        "minutesPerGoal": 208
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "christian-vieri-1998",
+      "name": "Christian Vieri",
+      "country": "Italy",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 333,
+        "goals": 5,
+        "assists": 1,
+        "shotsOnTarget": 13,
+        "minutesPerGoal": 67
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "alessandro-del-piero-1998",
+      "name": "Alessandro Del Piero",
+      "country": "Italy",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": false,
+      "age": 27,
+      "stats": {
+        "matches": 2,
+        "minutes": 44,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 44
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "carlos-roa-1998",
+      "name": "Carlos Roa",
+      "country": "Argentina",
+      "year": 1998,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 4,
+        "minutes": 352,
+        "cleanSheets": 2,
+        "savesPerGame": 2.9,
+        "goalsAgainst": 3
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "roberto-ayala-1998",
+      "name": "Roberto Ayala",
+      "country": "Argentina",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 5,
+        "minutes": 411,
+        "tacklesPerGame": 3.5,
+        "interceptionsPerGame": 2.9,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "jose-chamot-1998",
+      "name": "José Chamot",
+      "country": "Argentina",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 5,
+        "minutes": 428,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 2.1,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "nestor-sensini-1998",
+      "name": "Néstor Sensini",
+      "country": "Argentina",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 5,
+        "minutes": 422,
+        "tacklesPerGame": 2.9,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "javier-zanetti-1998",
+      "name": "Javier Zanetti",
+      "country": "Argentina",
+      "year": 1998,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 344,
+        "tacklesPerGame": 4,
+        "interceptionsPerGame": 3.4,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "diego-simeone-1998",
+      "name": "Diego Simeone",
+      "country": "Argentina",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 5,
+        "minutes": 436,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 3.2,
+        "tacklesPerGame": 1.9
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "matias-almeyda-1998",
+      "name": "Matías Almeyda",
+      "country": "Argentina",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 4,
+        "minutes": 320,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 1.9,
+        "tacklesPerGame": 1.8
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "juan-sebastian-veron-1998",
+      "name": "Juan Sebastián Verón",
+      "country": "Argentina",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 4,
+        "minutes": 337,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 3.2,
+        "tacklesPerGame": 2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "ariel-ortega-1998",
+      "name": "Ariel Ortega",
+      "country": "Argentina",
+      "year": 1998,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 5,
+        "minutes": 424,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 3,
+        "tacklesPerGame": 2.6
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "gabriel-batistuta-1998",
+      "name": "Gabriel Batistuta",
+      "country": "Argentina",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 5,
+        "minutes": 424,
+        "goals": 5,
+        "assists": 0,
+        "shotsOnTarget": 13,
+        "minutesPerGoal": 85
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "claudio-lopez-1998",
+      "name": "Claudio López",
+      "country": "Argentina",
+      "year": 1998,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 335,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 7,
+        "minutesPerGoal": 335
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    }
+  ]
+}

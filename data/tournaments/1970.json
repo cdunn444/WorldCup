@@ -1,0 +1,1788 @@
+{
+  "year": 1970,
+  "host": "Mexico",
+  "cards": [
+    {
+      "id": "felix-1970",
+      "name": "Félix",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "GK",
+      "stage": "Champion",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 7,
+        "minutes": 583,
+        "cleanSheets": 1,
+        "savesPerGame": 3.8,
+        "goalsAgainst": 5
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "carlos-alberto-1970",
+      "name": "Carlos Alberto",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 523,
+        "tacklesPerGame": 4.1,
+        "interceptionsPerGame": 2.6,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "legendary",
+      "captain": true
+    },
+    {
+      "id": "brito-1970",
+      "name": "Brito",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 554,
+        "tacklesPerGame": 2.5,
+        "interceptionsPerGame": 2.1,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "piazza-1970",
+      "name": "Piazza",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 491,
+        "tacklesPerGame": 3.7,
+        "interceptionsPerGame": 2.6,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "everaldo-1970",
+      "name": "Everaldo",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 481,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "clodoaldo-1970",
+      "name": "Clodoaldo",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 573,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 2.7,
+        "tacklesPerGame": 2.3
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "gerson-1970",
+      "name": "Gérson",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 500,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 3.5,
+        "tacklesPerGame": 2.5
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "rivelino-1970",
+      "name": "Rivelino",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 6,
+        "minutes": 539,
+        "goals": 3,
+        "assists": 3,
+        "keyPassesPerGame": 3.6,
+        "tacklesPerGame": 2.5
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "jairzinho-1970",
+      "name": "Jairzinho",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 605,
+        "goals": 7,
+        "assists": 1,
+        "shotsOnTarget": 16,
+        "minutesPerGoal": 86
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "iconic"
+    },
+    {
+      "id": "tostao-1970",
+      "name": "Tostão",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 6,
+        "minutes": 526,
+        "goals": 2,
+        "assists": 4,
+        "shotsOnTarget": 9,
+        "minutesPerGoal": 263
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "pele-1970",
+      "name": "Pelé",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 7,
+        "minutes": 598,
+        "goals": 4,
+        "assists": 6,
+        "shotsOnTarget": 12,
+        "minutesPerGoal": 150
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "goldenBall": true,
+        "allTournament": true
+      },
+      "rarity": "iconic"
+    },
+    {
+      "id": "paulo-cezar-1970",
+      "name": "Paulo Cézar",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": false,
+      "age": 31,
+      "stats": {
+        "matches": 1,
+        "minutes": 24,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.7,
+        "tacklesPerGame": 1.7
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "roberto-miranda-1970",
+      "name": "Roberto Miranda",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": false,
+      "age": 28,
+      "stats": {
+        "matches": 3,
+        "minutes": 131,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 1,
+        "minutesPerGoal": 131
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "edu-1970",
+      "name": "Edu",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": false,
+      "age": 29,
+      "stats": {
+        "matches": 1,
+        "minutes": 30,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 3,
+        "minutesPerGoal": 30
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "marco-antonio-1970",
+      "name": "Marco Antônio",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": false,
+      "age": 27,
+      "stats": {
+        "matches": 3,
+        "minutes": 112,
+        "tacklesPerGame": 2,
+        "interceptionsPerGame": 2,
+        "cleanSheets": 1,
+        "goalsScored": 0
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "ado-1970",
+      "name": "Ado",
+      "country": "Brazil",
+      "year": 1970,
+      "position": "GK",
+      "stage": "Champion",
+      "starter": false,
+      "age": 29,
+      "stats": {
+        "matches": 3,
+        "minutes": 130,
+        "cleanSheets": 1,
+        "savesPerGame": 2,
+        "goalsAgainst": 3
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "enrico-albertosi-1970",
+      "name": "Enrico Albertosi",
+      "country": "Italy",
+      "year": 1970,
+      "position": "GK",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 6,
+        "minutes": 526,
+        "cleanSheets": 3,
+        "savesPerGame": 4,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "tarcisio-burgnich-1970",
+      "name": "Tarcisio Burgnich",
+      "country": "Italy",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 473,
+        "tacklesPerGame": 3.1,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "pierluigi-cera-1970",
+      "name": "Pierluigi Cera",
+      "country": "Italy",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 499,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "roberto-rosato-1970",
+      "name": "Roberto Rosato",
+      "country": "Italy",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 565,
+        "tacklesPerGame": 2.3,
+        "interceptionsPerGame": 2.1,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "giacinto-facchetti-1970",
+      "name": "Giacinto Facchetti",
+      "country": "Italy",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 627,
+        "tacklesPerGame": 3.2,
+        "interceptionsPerGame": 3.3,
+        "cleanSheets": 4,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare",
+      "captain": true
+    },
+    {
+      "id": "mario-bertini-1970",
+      "name": "Mario Bertini",
+      "country": "Italy",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 6,
+        "minutes": 514,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.1,
+        "tacklesPerGame": 1.7
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "giancarlo-de-sisti-1970",
+      "name": "Giancarlo De Sisti",
+      "country": "Italy",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 492,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 2.5,
+        "tacklesPerGame": 1.8
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "sandro-mazzola-1970",
+      "name": "Sandro Mazzola",
+      "country": "Italy",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 7,
+        "minutes": 589,
+        "goals": 1,
+        "assists": 2,
+        "keyPassesPerGame": 3.7,
+        "tacklesPerGame": 2.5
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "angelo-domenghini-1970",
+      "name": "Angelo Domenghini",
+      "country": "Italy",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 538,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 538
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "roberto-boninsegna-1970",
+      "name": "Roberto Boninsegna",
+      "country": "Italy",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 7,
+        "minutes": 619,
+        "goals": 2,
+        "assists": 1,
+        "shotsOnTarget": 7,
+        "minutesPerGoal": 310
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "luigi-riva-1970",
+      "name": "Luigi Riva",
+      "country": "Italy",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 6,
+        "minutes": 484,
+        "goals": 3,
+        "assists": 2,
+        "shotsOnTarget": 9,
+        "minutesPerGoal": 161
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "gianni-rivera-1970",
+      "name": "Gianni Rivera",
+      "country": "Italy",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": false,
+      "age": 29,
+      "stats": {
+        "matches": 2,
+        "minutes": 67,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 3,
+        "tacklesPerGame": 2.7
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "antonio-juliano-1970",
+      "name": "Antonio Juliano",
+      "country": "Italy",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": false,
+      "age": 31,
+      "stats": {
+        "matches": 2,
+        "minutes": 56,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.5,
+        "tacklesPerGame": 1.8
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "giorgio-puia-1970",
+      "name": "Giorgio Puia",
+      "country": "Italy",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": false,
+      "age": 32,
+      "stats": {
+        "matches": 4,
+        "minutes": 113,
+        "tacklesPerGame": 2.4,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 1,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "sepp-maier-1970",
+      "name": "Sepp Maier",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "GK",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 572,
+        "cleanSheets": 1,
+        "savesPerGame": 3.5,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "berti-vogts-1970",
+      "name": "Berti Vogts",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 7,
+        "minutes": 617,
+        "tacklesPerGame": 3.5,
+        "interceptionsPerGame": 2.6,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "karl-heinz-schnellinger-1970",
+      "name": "Karl-Heinz Schnellinger",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 7,
+        "minutes": 571,
+        "tacklesPerGame": 3.6,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "franz-beckenbauer-1970",
+      "name": "Franz Beckenbauer",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 617,
+        "tacklesPerGame": 3.8,
+        "interceptionsPerGame": 2.6,
+        "cleanSheets": 4,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare",
+      "captain": true
+    },
+    {
+      "id": "willi-schulz-1970",
+      "name": "Willi Schulz",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 7,
+        "minutes": 626,
+        "tacklesPerGame": 2.6,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "wolfgang-overath-1970",
+      "name": "Wolfgang Overath",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 559,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 3,
+        "tacklesPerGame": 2.4
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "uwe-seeler-1970",
+      "name": "Uwe Seeler",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 512,
+        "goals": 2,
+        "assists": 1,
+        "shotsOnTarget": 8,
+        "minutesPerGoal": 256
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon",
+      "captain": true
+    },
+    {
+      "id": "reinhard-libuda-1970",
+      "name": "Reinhard Libuda",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 7,
+        "minutes": 625,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 3,
+        "minutesPerGoal": 625
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "gerd-muller-1970",
+      "name": "Gerd Müller",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 499,
+        "goals": 10,
+        "assists": 1,
+        "shotsOnTarget": 22,
+        "minutesPerGoal": 50
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "goldenBoot": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "siegfried-held-1970",
+      "name": "Siegfried Held",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 506,
+        "goals": 0,
+        "assists": 2,
+        "shotsOnTarget": 3,
+        "minutesPerGoal": 506
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "hannes-lohr-1970",
+      "name": "Hannes Löhr",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 597,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.2,
+        "tacklesPerGame": 1.5
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "jurgen-grabowski-1970",
+      "name": "Jürgen Grabowski",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": false,
+      "age": 25,
+      "stats": {
+        "matches": 2,
+        "minutes": 61,
+        "goals": 1,
+        "assists": 1,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 61
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "klaus-fichtel-1970",
+      "name": "Klaus Fichtel",
+      "country": "West Germany",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": false,
+      "age": 31,
+      "stats": {
+        "matches": 3,
+        "minutes": 70,
+        "tacklesPerGame": 2,
+        "interceptionsPerGame": 2.1,
+        "cleanSheets": 1,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "ladislao-mazurkiewicz-1970",
+      "name": "Ladislao Mazurkiewicz",
+      "country": "Uruguay",
+      "year": 1970,
+      "position": "GK",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 576,
+        "cleanSheets": 2,
+        "savesPerGame": 3.6,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "atilio-ancheta-1970",
+      "name": "Atilio Ancheta",
+      "country": "Uruguay",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 7,
+        "minutes": 621,
+        "tacklesPerGame": 3.2,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "roberto-matosas-1970",
+      "name": "Roberto Matosas",
+      "country": "Uruguay",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 6,
+        "minutes": 490,
+        "tacklesPerGame": 3.1,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "juan-mujica-1970",
+      "name": "Juan Mujica",
+      "country": "Uruguay",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 489,
+        "tacklesPerGame": 2.6,
+        "interceptionsPerGame": 2.1,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "luis-ubina-1970",
+      "name": "Luis Ubiña",
+      "country": "Uruguay",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 510,
+        "tacklesPerGame": 2.7,
+        "interceptionsPerGame": 1.8,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon",
+      "captain": true
+    },
+    {
+      "id": "julio-montero-castillo-1970",
+      "name": "Julio Montero Castillo",
+      "country": "Uruguay",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 6,
+        "minutes": 509,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.1,
+        "tacklesPerGame": 2.2
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "ildo-maneiro-1970",
+      "name": "Ildo Maneiro",
+      "country": "Uruguay",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 7,
+        "minutes": 594,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.4,
+        "tacklesPerGame": 1.6
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "victor-esparrago-1970",
+      "name": "Víctor Espárrago",
+      "country": "Uruguay",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 529,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.4,
+        "tacklesPerGame": 1.6
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "luis-cubilla-1970",
+      "name": "Luis Cubilla",
+      "country": "Uruguay",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 596,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 3,
+        "minutesPerGoal": 596
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "julio-morales-1970",
+      "name": "Julio Morales",
+      "country": "Uruguay",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 498,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 3,
+        "minutesPerGoal": 498
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "pedro-rocha-1970",
+      "name": "Pedro Rocha",
+      "country": "Uruguay",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 599,
+        "goals": 1,
+        "assists": 1,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 599
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "gordon-banks-1970",
+      "name": "Gordon Banks",
+      "country": "England",
+      "year": 1970,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 4,
+        "minutes": 357,
+        "cleanSheets": 2,
+        "savesPerGame": 4.1,
+        "goalsAgainst": 2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "tommy-wright-1970",
+      "name": "Tommy Wright",
+      "country": "England",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 4,
+        "minutes": 318,
+        "tacklesPerGame": 2.1,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 1,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "bobby-moore-1970",
+      "name": "Bobby Moore",
+      "country": "England",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 4,
+        "minutes": 325,
+        "tacklesPerGame": 3.4,
+        "interceptionsPerGame": 2.9,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare",
+      "captain": true
+    },
+    {
+      "id": "brian-labone-1970",
+      "name": "Brian Labone",
+      "country": "England",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 343,
+        "tacklesPerGame": 2.4,
+        "interceptionsPerGame": 2.5,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "terry-cooper-1970",
+      "name": "Terry Cooper",
+      "country": "England",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 358,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 1.9,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "alan-mullery-1970",
+      "name": "Alan Mullery",
+      "country": "England",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 356,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.1,
+        "tacklesPerGame": 1.6
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "bobby-charlton-1970",
+      "name": "Bobby Charlton",
+      "country": "England",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 5,
+        "minutes": 412,
+        "goals": 2,
+        "assists": 1,
+        "keyPassesPerGame": 3.2,
+        "tacklesPerGame": 2.3
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "alan-ball-1970",
+      "name": "Alan Ball",
+      "country": "England",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 5,
+        "minutes": 429,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 2.9,
+        "tacklesPerGame": 2.3
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "martin-peters-1970",
+      "name": "Martin Peters",
+      "country": "England",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 5,
+        "minutes": 405,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.5,
+        "tacklesPerGame": 2.4
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "geoff-hurst-1970",
+      "name": "Geoff Hurst",
+      "country": "England",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 325,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 325
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "francis-lee-1970",
+      "name": "Francis Lee",
+      "country": "England",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 4,
+        "minutes": 356,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 4,
+        "minutesPerGoal": 356
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "peter-bonetti-1970",
+      "name": "Peter Bonetti",
+      "country": "England",
+      "year": 1970,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": false,
+      "age": 26,
+      "stats": {
+        "matches": 1,
+        "minutes": 29,
+        "cleanSheets": 0,
+        "savesPerGame": 3,
+        "goalsAgainst": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "luis-rubinos-1970",
+      "name": "Luis Rubiños",
+      "country": "Peru",
+      "year": 1970,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 4,
+        "minutes": 337,
+        "cleanSheets": 2,
+        "savesPerGame": 2.9,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "eloy-campos-1970",
+      "name": "Eloy Campos",
+      "country": "Peru",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 5,
+        "minutes": 449,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 1.6,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "hector-chumpitaz-1970",
+      "name": "Héctor Chumpitaz",
+      "country": "Peru",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 4,
+        "minutes": 346,
+        "tacklesPerGame": 3.5,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common",
+      "captain": true
+    },
+    {
+      "id": "julio-melendez-1970",
+      "name": "Julio Meléndez",
+      "country": "Peru",
+      "year": 1970,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 4,
+        "minutes": 328,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "teofilo-cubillas-1970",
+      "name": "Teófilo Cubillas",
+      "country": "Peru",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 5,
+        "minutes": 397,
+        "goals": 5,
+        "assists": 1,
+        "keyPassesPerGame": 3.2,
+        "tacklesPerGame": 2.9
+      },
+      "honors": {
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "roberto-challe-1970",
+      "name": "Roberto Challe",
+      "country": "Peru",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 346,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.2,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "ramon-mifflin-1970",
+      "name": "Ramón Mifflin",
+      "country": "Peru",
+      "year": 1970,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 4,
+        "minutes": 316,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.4,
+        "tacklesPerGame": 1.7
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "hugo-sotil-1970",
+      "name": "Hugo Sotil",
+      "country": "Peru",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 5,
+        "minutes": 420,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 7,
+        "minutesPerGoal": 420
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "alberto-gallardo-1970",
+      "name": "Alberto Gallardo",
+      "country": "Peru",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 326,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 326
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "pedro-leon-1970",
+      "name": "Pedro León",
+      "country": "Peru",
+      "year": 1970,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 317,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 2,
+        "minutesPerGoal": 317
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    }
+  ]
+}

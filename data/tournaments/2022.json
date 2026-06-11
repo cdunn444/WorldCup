@@ -1,0 +1,2249 @@
+{
+  "year": 2022,
+  "host": "Qatar",
+  "cards": [
+    {
+      "id": "emiliano-martinez-2022",
+      "name": "Emiliano Martínez",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "GK",
+      "stage": "Champion",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 558,
+        "cleanSheets": 2,
+        "savesPerGame": 4.3,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "nahuel-molina-2022",
+      "name": "Nahuel Molina",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 507,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "cristian-romero-2022",
+      "name": "Cristian Romero",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 7,
+        "minutes": 568,
+        "tacklesPerGame": 3.6,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "nicolas-otamendi-2022",
+      "name": "Nicolás Otamendi",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 562,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 2.9,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "nicolas-tagliafico-2022",
+      "name": "Nicolás Tagliafico",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 596,
+        "tacklesPerGame": 2.6,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "rodrigo-de-paul-2022",
+      "name": "Rodrigo De Paul",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 526,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.9,
+        "tacklesPerGame": 2.3
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "enzo-fernandez-2022",
+      "name": "Enzo Fernández",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 7,
+        "minutes": 548,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 3.1,
+        "tacklesPerGame": 2.4
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "alexis-mac-allister-2022",
+      "name": "Alexis Mac Allister",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 6,
+        "minutes": 527,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 3.1,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "angel-di-maria-2022",
+      "name": "Ángel Di María",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 6,
+        "minutes": 485,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 3.5,
+        "tacklesPerGame": 2.4
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "finalGoalscorer": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "lionel-messi-2022",
+      "name": "Lionel Messi",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": true,
+      "age": 35,
+      "stats": {
+        "matches": 7,
+        "minutes": 593,
+        "goals": 7,
+        "assists": 3,
+        "shotsOnTarget": 17,
+        "minutesPerGoal": 85
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "goldenBall": true,
+        "allTournament": true,
+        "finalGoalscorer": true
+      },
+      "rarity": "iconic",
+      "captain": true
+    },
+    {
+      "id": "julian-alvarez-2022",
+      "name": "Julián Álvarez",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 527,
+        "goals": 4,
+        "assists": 0,
+        "shotsOnTarget": 10,
+        "minutesPerGoal": 132
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "gonzalo-montiel-2022",
+      "name": "Gonzalo Montiel",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": false,
+      "age": 25,
+      "stats": {
+        "matches": 2,
+        "minutes": 74,
+        "tacklesPerGame": 2.7,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 1,
+        "goalsScored": 1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "marcos-acuna-2022",
+      "name": "Marcos Acuña",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": false,
+      "age": 31,
+      "stats": {
+        "matches": 3,
+        "minutes": 93,
+        "tacklesPerGame": 3.1,
+        "interceptionsPerGame": 1.9,
+        "cleanSheets": 1,
+        "goalsScored": 1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "leandro-paredes-2022",
+      "name": "Leandro Paredes",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": false,
+      "age": 28,
+      "stats": {
+        "matches": 2,
+        "minutes": 78,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.4,
+        "tacklesPerGame": 1.6
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "lautaro-martinez-2022",
+      "name": "Lautaro Martínez",
+      "country": "Argentina",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": false,
+      "age": 30,
+      "stats": {
+        "matches": 2,
+        "minutes": 63,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 4,
+        "minutesPerGoal": 63
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "hugo-lloris-2022",
+      "name": "Hugo Lloris",
+      "country": "France",
+      "year": 2022,
+      "position": "GK",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 6,
+        "minutes": 533,
+        "cleanSheets": 2,
+        "savesPerGame": 4.1,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare",
+      "captain": true
+    },
+    {
+      "id": "jules-kounde-2022",
+      "name": "Jules Koundé",
+      "country": "France",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 6,
+        "minutes": 525,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2.7,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "raphael-varane-2022",
+      "name": "Raphaël Varane",
+      "country": "France",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 7,
+        "minutes": 582,
+        "tacklesPerGame": 2.9,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "dayot-upamecano-2022",
+      "name": "Dayot Upamecano",
+      "country": "France",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 7,
+        "minutes": 562,
+        "tacklesPerGame": 2.3,
+        "interceptionsPerGame": 2.1,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "theo-hernandez-2022",
+      "name": "Theo Hernández",
+      "country": "France",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 519,
+        "tacklesPerGame": 3.7,
+        "interceptionsPerGame": 2.6,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "aurelien-tchouameni-2022",
+      "name": "Aurélien Tchouaméni",
+      "country": "France",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 487,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 3,
+        "tacklesPerGame": 1.9
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "adrien-rabiot-2022",
+      "name": "Adrien Rabiot",
+      "country": "France",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 523,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.4,
+        "tacklesPerGame": 2.5
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "antoine-griezmann-2022",
+      "name": "Antoine Griezmann",
+      "country": "France",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 492,
+        "goals": 1,
+        "assists": 2,
+        "keyPassesPerGame": 3.4,
+        "tacklesPerGame": 2.6
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "ousmane-dembele-2022",
+      "name": "Ousmane Dembélé",
+      "country": "France",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 598,
+        "goals": 1,
+        "assists": 1,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 598
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "kylian-mbappe-2022",
+      "name": "Kylian Mbappé",
+      "country": "France",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 577,
+        "goals": 8,
+        "assists": 2,
+        "shotsOnTarget": 18,
+        "minutesPerGoal": 72
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "goldenBoot": true,
+        "finalGoalscorer": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "olivier-giroud-2022",
+      "name": "Olivier Giroud",
+      "country": "France",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 7,
+        "minutes": 575,
+        "goals": 4,
+        "assists": 0,
+        "shotsOnTarget": 9,
+        "minutesPerGoal": 144
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "randal-kolo-muani-2022",
+      "name": "Randal Kolo Muani",
+      "country": "France",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": false,
+      "age": 31,
+      "stats": {
+        "matches": 2,
+        "minutes": 52,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 52
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "marcus-thuram-2022",
+      "name": "Marcus Thuram",
+      "country": "France",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": false,
+      "age": 24,
+      "stats": {
+        "matches": 4,
+        "minutes": 124,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 3,
+        "minutesPerGoal": 124
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "eduardo-camavinga-2022",
+      "name": "Eduardo Camavinga",
+      "country": "France",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": false,
+      "age": 26,
+      "stats": {
+        "matches": 3,
+        "minutes": 78,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.2,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "dominik-livakovic-2022",
+      "name": "Dominik Livaković",
+      "country": "Croatia",
+      "year": 2022,
+      "position": "GK",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 6,
+        "minutes": 492,
+        "cleanSheets": 2,
+        "savesPerGame": 3.7,
+        "goalsAgainst": 3
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "josip-juranovic-2022",
+      "name": "Josip Juranović",
+      "country": "Croatia",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 469,
+        "tacklesPerGame": 3.1,
+        "interceptionsPerGame": 1.8,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "dejan-lovren-2022",
+      "name": "Dejan Lovren",
+      "country": "Croatia",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 576,
+        "tacklesPerGame": 2.6,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "josko-gvardiol-2022",
+      "name": "Joško Gvardiol",
+      "country": "Croatia",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 504,
+        "tacklesPerGame": 3.4,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "borna-sosa-2022",
+      "name": "Borna Sosa",
+      "country": "Croatia",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 6,
+        "minutes": 536,
+        "tacklesPerGame": 2.6,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "marcelo-brozovic-2022",
+      "name": "Marcelo Brozović",
+      "country": "Croatia",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 574,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 3.2,
+        "tacklesPerGame": 2.3
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "luka-modric-2022",
+      "name": "Luka Modrić",
+      "country": "Croatia",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 487,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 3,
+        "tacklesPerGame": 2.8
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare",
+      "captain": true
+    },
+    {
+      "id": "mateo-kovacic-2022",
+      "name": "Mateo Kovačić",
+      "country": "Croatia",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 561,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 3.1,
+        "tacklesPerGame": 2.6
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "mario-pasalic-2022",
+      "name": "Mario Pašalić",
+      "country": "Croatia",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 6,
+        "minutes": 509,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.4,
+        "tacklesPerGame": 2.2
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "andrej-kramaric-2022",
+      "name": "Andrej Kramarić",
+      "country": "Croatia",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 575,
+        "goals": 2,
+        "assists": 0,
+        "shotsOnTarget": 7,
+        "minutesPerGoal": 288
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "ivan-perisic-2022",
+      "name": "Ivan Perišić",
+      "country": "Croatia",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 7,
+        "minutes": 555,
+        "goals": 1,
+        "assists": 1,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 555
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "mislav-orsic-2022",
+      "name": "Mislav Oršić",
+      "country": "Croatia",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": false,
+      "age": 30,
+      "stats": {
+        "matches": 3,
+        "minutes": 78,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 78
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "yassine-bounou-2022",
+      "name": "Yassine Bounou",
+      "country": "Morocco",
+      "year": 2022,
+      "position": "GK",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 7,
+        "minutes": 569,
+        "cleanSheets": 3,
+        "savesPerGame": 4.5,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "achraf-hakimi-2022",
+      "name": "Achraf Hakimi",
+      "country": "Morocco",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 7,
+        "minutes": 618,
+        "tacklesPerGame": 3.2,
+        "interceptionsPerGame": 2.7,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "romain-saiss-2022",
+      "name": "Romain Saïss",
+      "country": "Morocco",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 626,
+        "tacklesPerGame": 2.9,
+        "interceptionsPerGame": 2.5,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon",
+      "captain": true
+    },
+    {
+      "id": "nayef-aguerd-2022",
+      "name": "Nayef Aguerd",
+      "country": "Morocco",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 7,
+        "minutes": 563,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 2.1,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "noussair-mazraoui-2022",
+      "name": "Noussair Mazraoui",
+      "country": "Morocco",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 6,
+        "minutes": 519,
+        "tacklesPerGame": 2.4,
+        "interceptionsPerGame": 1.9,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "sofyan-amrabat-2022",
+      "name": "Sofyan Amrabat",
+      "country": "Morocco",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 515,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.8,
+        "tacklesPerGame": 2.6
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "azzedine-ounahi-2022",
+      "name": "Azzedine Ounahi",
+      "country": "Morocco",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 618,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.2,
+        "tacklesPerGame": 1.6
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "selim-amallah-2022",
+      "name": "Selim Amallah",
+      "country": "Morocco",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 618,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.7,
+        "tacklesPerGame": 1.7
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "hakim-ziyech-2022",
+      "name": "Hakim Ziyech",
+      "country": "Morocco",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 520,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 520
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "youssef-en-nesyri-2022",
+      "name": "Youssef En-Nesyri",
+      "country": "Morocco",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 571,
+        "goals": 2,
+        "assists": 0,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 286
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "sofiane-boufal-2022",
+      "name": "Sofiane Boufal",
+      "country": "Morocco",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 562,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 2,
+        "minutesPerGoal": 562
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "alisson-2022",
+      "name": "Alisson",
+      "country": "Brazil",
+      "year": 2022,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 4,
+        "minutes": 336,
+        "cleanSheets": 3,
+        "savesPerGame": 5,
+        "goalsAgainst": 2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "danilo-2022",
+      "name": "Danilo",
+      "country": "Brazil",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 5,
+        "minutes": 405,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "marquinhos-2022",
+      "name": "Marquinhos",
+      "country": "Brazil",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 4,
+        "minutes": 327,
+        "tacklesPerGame": 2.9,
+        "interceptionsPerGame": 2.7,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "thiago-silva-2022",
+      "name": "Thiago Silva",
+      "country": "Brazil",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 312,
+        "tacklesPerGame": 3.1,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common",
+      "captain": true
+    },
+    {
+      "id": "eder-militao-2022",
+      "name": "Éder Militão",
+      "country": "Brazil",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 4,
+        "minutes": 347,
+        "tacklesPerGame": 2.3,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "casemiro-2022",
+      "name": "Casemiro",
+      "country": "Brazil",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 5,
+        "minutes": 416,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 3,
+        "tacklesPerGame": 1.8
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "lucas-paqueta-2022",
+      "name": "Lucas Paquetá",
+      "country": "Brazil",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 354,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2,
+        "tacklesPerGame": 2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "neymar-2022",
+      "name": "Neymar",
+      "country": "Brazil",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 343,
+        "goals": 2,
+        "assists": 1,
+        "shotsOnTarget": 8,
+        "minutesPerGoal": 172
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "raphinha-2022",
+      "name": "Raphinha",
+      "country": "Brazil",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 4,
+        "minutes": 341,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 4,
+        "minutesPerGoal": 341
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "vinicius-junior-2022",
+      "name": "Vinícius Júnior",
+      "country": "Brazil",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 5,
+        "minutes": 442,
+        "goals": 1,
+        "assists": 1,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 442
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "richarlison-2022",
+      "name": "Richarlison",
+      "country": "Brazil",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 4,
+        "minutes": 356,
+        "goals": 3,
+        "assists": 1,
+        "shotsOnTarget": 8,
+        "minutesPerGoal": 119
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "andries-noppert-2022",
+      "name": "Andries Noppert",
+      "country": "Netherlands",
+      "year": 2022,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 4,
+        "minutes": 338,
+        "cleanSheets": 2,
+        "savesPerGame": 3.6,
+        "goalsAgainst": 3
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "denzel-dumfries-2022",
+      "name": "Denzel Dumfries",
+      "country": "Netherlands",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 4,
+        "minutes": 357,
+        "tacklesPerGame": 3.5,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "jurrien-timber-2022",
+      "name": "Jurriën Timber",
+      "country": "Netherlands",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 329,
+        "tacklesPerGame": 3.2,
+        "interceptionsPerGame": 2.5,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "virgil-van-dijk-2022",
+      "name": "Virgil van Dijk",
+      "country": "Netherlands",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 5,
+        "minutes": 416,
+        "tacklesPerGame": 4.1,
+        "interceptionsPerGame": 2.6,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common",
+      "captain": true
+    },
+    {
+      "id": "nathan-ake-2022",
+      "name": "Nathan Aké",
+      "country": "Netherlands",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 5,
+        "minutes": 404,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "daley-blind-2022",
+      "name": "Daley Blind",
+      "country": "Netherlands",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 319,
+        "tacklesPerGame": 2.6,
+        "interceptionsPerGame": 1.9,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "frenkie-de-jong-2022",
+      "name": "Frenkie de Jong",
+      "country": "Netherlands",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 4,
+        "minutes": 335,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 3.1,
+        "tacklesPerGame": 2.4
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "marten-de-roon-2022",
+      "name": "Marten de Roon",
+      "country": "Netherlands",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 4,
+        "minutes": 330,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.7,
+        "tacklesPerGame": 2.2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "steven-berghuis-2022",
+      "name": "Steven Berghuis",
+      "country": "Netherlands",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 5,
+        "minutes": 396,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.6,
+        "tacklesPerGame": 2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "cody-gakpo-2022",
+      "name": "Cody Gakpo",
+      "country": "Netherlands",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 322,
+        "goals": 3,
+        "assists": 1,
+        "shotsOnTarget": 9,
+        "minutesPerGoal": 107
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "memphis-depay-2022",
+      "name": "Memphis Depay",
+      "country": "Netherlands",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 5,
+        "minutes": 432,
+        "goals": 1,
+        "assists": 1,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 432
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "jordan-pickford-2022",
+      "name": "Jordan Pickford",
+      "country": "England",
+      "year": 2022,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 5,
+        "minutes": 436,
+        "cleanSheets": 3,
+        "savesPerGame": 4.1,
+        "goalsAgainst": 3
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "kyle-walker-2022",
+      "name": "Kyle Walker",
+      "country": "England",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 4,
+        "minutes": 336,
+        "tacklesPerGame": 3.3,
+        "interceptionsPerGame": 2.8,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "john-stones-2022",
+      "name": "John Stones",
+      "country": "England",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 4,
+        "minutes": 314,
+        "tacklesPerGame": 2.9,
+        "interceptionsPerGame": 2.5,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "harry-maguire-2022",
+      "name": "Harry Maguire",
+      "country": "England",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 346,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "luke-shaw-2022",
+      "name": "Luke Shaw",
+      "country": "England",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 4,
+        "minutes": 354,
+        "tacklesPerGame": 2.4,
+        "interceptionsPerGame": 2.1,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "declan-rice-2022",
+      "name": "Declan Rice",
+      "country": "England",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 333,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.5,
+        "tacklesPerGame": 1.8
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "jude-bellingham-2022",
+      "name": "Jude Bellingham",
+      "country": "England",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 4,
+        "minutes": 344,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 2.6,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "jordan-henderson-2022",
+      "name": "Jordan Henderson",
+      "country": "England",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 5,
+        "minutes": 393,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.5,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "bukayo-saka-2022",
+      "name": "Bukayo Saka",
+      "country": "England",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 359,
+        "goals": 2,
+        "assists": 0,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 180
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "harry-kane-2022",
+      "name": "Harry Kane",
+      "country": "England",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 4,
+        "minutes": 324,
+        "goals": 2,
+        "assists": 3,
+        "shotsOnTarget": 9,
+        "minutesPerGoal": 162
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon",
+      "captain": true
+    },
+    {
+      "id": "phil-foden-2022",
+      "name": "Phil Foden",
+      "country": "England",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": false,
+      "age": 27,
+      "stats": {
+        "matches": 1,
+        "minutes": 26,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 26
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "diogo-costa-2022",
+      "name": "Diogo Costa",
+      "country": "Portugal",
+      "year": 2022,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 4,
+        "minutes": 315,
+        "cleanSheets": 2,
+        "savesPerGame": 4.1,
+        "goalsAgainst": 2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "diogo-dalot-2022",
+      "name": "Diogo Dalot",
+      "country": "Portugal",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 4,
+        "minutes": 313,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "pepe-2022",
+      "name": "Pepe",
+      "country": "Portugal",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 4,
+        "minutes": 349,
+        "tacklesPerGame": 2.7,
+        "interceptionsPerGame": 2.1,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "ruben-dias-2022",
+      "name": "Rúben Dias",
+      "country": "Portugal",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 5,
+        "minutes": 393,
+        "tacklesPerGame": 3.3,
+        "interceptionsPerGame": 2.7,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "raphael-guerreiro-2022",
+      "name": "Raphaël Guerreiro",
+      "country": "Portugal",
+      "year": 2022,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 4,
+        "minutes": 358,
+        "tacklesPerGame": 2.4,
+        "interceptionsPerGame": 2.1,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "william-carvalho-2022",
+      "name": "William Carvalho",
+      "country": "Portugal",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 346,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.2,
+        "tacklesPerGame": 1.9
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "ruben-neves-2022",
+      "name": "Rúben Neves",
+      "country": "Portugal",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 5,
+        "minutes": 435,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.1,
+        "tacklesPerGame": 1.5
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "bruno-fernandes-2022",
+      "name": "Bruno Fernandes",
+      "country": "Portugal",
+      "year": 2022,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 4,
+        "minutes": 315,
+        "goals": 2,
+        "assists": 3,
+        "keyPassesPerGame": 2.8,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "goncalo-ramos-2022",
+      "name": "Gonçalo Ramos",
+      "country": "Portugal",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 5,
+        "minutes": 441,
+        "goals": 3,
+        "assists": 1,
+        "shotsOnTarget": 7,
+        "minutesPerGoal": 147
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "joao-felix-2022",
+      "name": "João Félix",
+      "country": "Portugal",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 337,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 337
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "cristiano-ronaldo-2022",
+      "name": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 4,
+        "minutes": 324,
+        "goals": 1,
+        "assists": 1,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 324
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon",
+      "captain": true
+    },
+    {
+      "id": "rafael-leao-2022",
+      "name": "Rafael Leão",
+      "country": "Portugal",
+      "year": 2022,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": false,
+      "age": 24,
+      "stats": {
+        "matches": 1,
+        "minutes": 25,
+        "goals": 1,
+        "assists": 1,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 25
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    }
+  ]
+}

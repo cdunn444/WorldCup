@@ -1,0 +1,1714 @@
+{
+  "year": 2014,
+  "host": "Brazil",
+  "cards": [
+    {
+      "id": "manuel-neuer-2014",
+      "name": "Manuel Neuer",
+      "country": "Germany",
+      "year": 2014,
+      "position": "GK",
+      "stage": "Champion",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 485,
+        "cleanSheets": 4,
+        "savesPerGame": 4.2,
+        "goalsAgainst": 3
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "philipp-lahm-2014",
+      "name": "Philipp Lahm",
+      "country": "Germany",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 7,
+        "minutes": 586,
+        "tacklesPerGame": 3.4,
+        "interceptionsPerGame": 3.2,
+        "cleanSheets": 4,
+        "goalsScored": 0
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary",
+      "captain": true
+    },
+    {
+      "id": "jerome-boateng-2014",
+      "name": "Jérôme Boateng",
+      "country": "Germany",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 587,
+        "tacklesPerGame": 3.4,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "mats-hummels-2014",
+      "name": "Mats Hummels",
+      "country": "Germany",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 6,
+        "minutes": 473,
+        "tacklesPerGame": 2.9,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "benedikt-howedes-2014",
+      "name": "Benedikt Höwedes",
+      "country": "Germany",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 6,
+        "minutes": 473,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "sami-khedira-2014",
+      "name": "Sami Khedira",
+      "country": "Germany",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 517,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 2.8,
+        "tacklesPerGame": 2.5
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "bastian-schweinsteiger-2014",
+      "name": "Bastian Schweinsteiger",
+      "country": "Germany",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 473,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 3.1,
+        "tacklesPerGame": 2.6
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "toni-kroos-2014",
+      "name": "Toni Kroos",
+      "country": "Germany",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 7,
+        "minutes": 598,
+        "goals": 2,
+        "assists": 4,
+        "keyPassesPerGame": 3.6,
+        "tacklesPerGame": 2.3
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "mesut-ozil-2014",
+      "name": "Mesut Özil",
+      "country": "Germany",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 490,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 2.8,
+        "tacklesPerGame": 2.4
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "thomas-muller-2014",
+      "name": "Thomas Müller",
+      "country": "Germany",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 516,
+        "goals": 5,
+        "assists": 3,
+        "shotsOnTarget": 14,
+        "minutesPerGoal": 103
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "iconic"
+    },
+    {
+      "id": "miroslav-klose-2014",
+      "name": "Miroslav Klose",
+      "country": "Germany",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 7,
+        "minutes": 566,
+        "goals": 2,
+        "assists": 0,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 283
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "mario-gotze-2014",
+      "name": "Mario Götze",
+      "country": "Germany",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": false,
+      "age": 31,
+      "stats": {
+        "matches": 3,
+        "minutes": 116,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 116
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "finalGoalscorer": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "andre-schurrle-2014",
+      "name": "André Schürrle",
+      "country": "Germany",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": false,
+      "age": 27,
+      "stats": {
+        "matches": 3,
+        "minutes": 77,
+        "goals": 3,
+        "assists": 0,
+        "shotsOnTarget": 8,
+        "minutesPerGoal": 26
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "per-mertesacker-2014",
+      "name": "Per Mertesacker",
+      "country": "Germany",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": false,
+      "age": 25,
+      "stats": {
+        "matches": 2,
+        "minutes": 48,
+        "tacklesPerGame": 2.9,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 1,
+        "goalsScored": 0
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "sergio-romero-2014",
+      "name": "Sergio Romero",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "GK",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 7,
+        "minutes": 606,
+        "cleanSheets": 4,
+        "savesPerGame": 4.2,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "pablo-zabaleta-2014",
+      "name": "Pablo Zabaleta",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 612,
+        "tacklesPerGame": 3.5,
+        "interceptionsPerGame": 2.6,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "ezequiel-garay-2014",
+      "name": "Ezequiel Garay",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 7,
+        "minutes": 550,
+        "tacklesPerGame": 3.6,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "martin-demichelis-2014",
+      "name": "Martín Demichelis",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 493,
+        "tacklesPerGame": 2.6,
+        "interceptionsPerGame": 1.9,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "marcos-rojo-2014",
+      "name": "Marcos Rojo",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 7,
+        "minutes": 599,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 1.9,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "javier-mascherano-2014",
+      "name": "Javier Mascherano",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 6,
+        "minutes": 504,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 2.9,
+        "tacklesPerGame": 2.6
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "lucas-biglia-2014",
+      "name": "Lucas Biglia",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 489,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 2.2,
+        "tacklesPerGame": 2.2
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "angel-di-maria-2014",
+      "name": "Ángel Di María",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 627,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 3,
+        "tacklesPerGame": 2.8
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "ezequiel-lavezzi-2014",
+      "name": "Ezequiel Lavezzi",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 6,
+        "minutes": 479,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 479
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "gonzalo-higuain-2014",
+      "name": "Gonzalo Higuaín",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 516,
+        "goals": 1,
+        "assists": 1,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 516
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "lionel-messi-2014",
+      "name": "Lionel Messi",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 494,
+        "goals": 4,
+        "assists": 1,
+        "shotsOnTarget": 11,
+        "minutesPerGoal": 124
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "goldenBall": true,
+        "allTournament": true
+      },
+      "rarity": "legendary",
+      "captain": true
+    },
+    {
+      "id": "sergio-aguero-2014",
+      "name": "Sergio Agüero",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": false,
+      "age": 27,
+      "stats": {
+        "matches": 3,
+        "minutes": 79,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 7,
+        "minutesPerGoal": 79
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "rodrigo-palacio-2014",
+      "name": "Rodrigo Palacio",
+      "country": "Argentina",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": false,
+      "age": 27,
+      "stats": {
+        "matches": 2,
+        "minutes": 71,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 4,
+        "minutesPerGoal": 71
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "jasper-cillessen-2014",
+      "name": "Jasper Cillessen",
+      "country": "Netherlands",
+      "year": 2014,
+      "position": "GK",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 6,
+        "minutes": 534,
+        "cleanSheets": 2,
+        "savesPerGame": 3.9,
+        "goalsAgainst": 5
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "ron-vlaar-2014",
+      "name": "Ron Vlaar",
+      "country": "Netherlands",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 7,
+        "minutes": 593,
+        "tacklesPerGame": 3.2,
+        "interceptionsPerGame": 2.9,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "stefan-de-vrij-2014",
+      "name": "Stefan de Vrij",
+      "country": "Netherlands",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 7,
+        "minutes": 585,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 2.5,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "bruno-martins-indi-2014",
+      "name": "Bruno Martins Indi",
+      "country": "Netherlands",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 6,
+        "minutes": 522,
+        "tacklesPerGame": 3.1,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "daley-blind-2014",
+      "name": "Daley Blind",
+      "country": "Netherlands",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 7,
+        "minutes": 587,
+        "tacklesPerGame": 2.9,
+        "interceptionsPerGame": 2.7,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "nigel-de-jong-2014",
+      "name": "Nigel de Jong",
+      "country": "Netherlands",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 6,
+        "minutes": 499,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 3.1,
+        "tacklesPerGame": 2.5
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "georginio-wijnaldum-2014",
+      "name": "Georginio Wijnaldum",
+      "country": "Netherlands",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 7,
+        "minutes": 595,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 2.1,
+        "tacklesPerGame": 2
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "wesley-sneijder-2014",
+      "name": "Wesley Sneijder",
+      "country": "Netherlands",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 526,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 3.2,
+        "tacklesPerGame": 2.3
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "arjen-robben-2014",
+      "name": "Arjen Robben",
+      "country": "Netherlands",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 535,
+        "goals": 3,
+        "assists": 1,
+        "shotsOnTarget": 11,
+        "minutesPerGoal": 178
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "robin-van-persie-2014",
+      "name": "Robin van Persie",
+      "country": "Netherlands",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 610,
+        "goals": 4,
+        "assists": 1,
+        "shotsOnTarget": 10,
+        "minutesPerGoal": 153
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "memphis-depay-2014",
+      "name": "Memphis Depay",
+      "country": "Netherlands",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": false,
+      "age": 29,
+      "stats": {
+        "matches": 3,
+        "minutes": 86,
+        "goals": 2,
+        "assists": 0,
+        "shotsOnTarget": 7,
+        "minutesPerGoal": 43
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "tim-krul-2014",
+      "name": "Tim Krul",
+      "country": "Netherlands",
+      "year": 2014,
+      "position": "GK",
+      "stage": "Semifinalist",
+      "starter": false,
+      "age": 26,
+      "stats": {
+        "matches": 2,
+        "minutes": 68,
+        "cleanSheets": 1,
+        "savesPerGame": 3.7,
+        "goalsAgainst": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "julio-cesar-2014",
+      "name": "Júlio César",
+      "country": "Brazil",
+      "year": 2014,
+      "position": "GK",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 7,
+        "minutes": 551,
+        "cleanSheets": 1,
+        "savesPerGame": 3.9,
+        "goalsAgainst": 5
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "dani-alves-2014",
+      "name": "Dani Alves",
+      "country": "Brazil",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 7,
+        "minutes": 552,
+        "tacklesPerGame": 3.1,
+        "interceptionsPerGame": 3,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "thiago-silva-2014",
+      "name": "Thiago Silva",
+      "country": "Brazil",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 6,
+        "minutes": 517,
+        "tacklesPerGame": 3.8,
+        "interceptionsPerGame": 3.3,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon",
+      "captain": true
+    },
+    {
+      "id": "david-luiz-2014",
+      "name": "David Luiz",
+      "country": "Brazil",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 6,
+        "minutes": 525,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 2.9,
+        "cleanSheets": 3,
+        "goalsScored": 2
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "marcelo-2014",
+      "name": "Marcelo",
+      "country": "Brazil",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 6,
+        "minutes": 473,
+        "tacklesPerGame": 3.5,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "luiz-gustavo-2014",
+      "name": "Luiz Gustavo",
+      "country": "Brazil",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 7,
+        "minutes": 615,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.3,
+        "tacklesPerGame": 1.9
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "fernandinho-2014",
+      "name": "Fernandinho",
+      "country": "Brazil",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 7,
+        "minutes": 589,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.1,
+        "tacklesPerGame": 2
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "oscar-2014",
+      "name": "Oscar",
+      "country": "Brazil",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 7,
+        "minutes": 593,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 2.7,
+        "tacklesPerGame": 2.4
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "hulk-2014",
+      "name": "Hulk",
+      "country": "Brazil",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 519,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 4,
+        "minutesPerGoal": 519
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "fred-2014",
+      "name": "Fred",
+      "country": "Brazil",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 476,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 3,
+        "minutesPerGoal": 476
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "neymar-2014",
+      "name": "Neymar",
+      "country": "Brazil",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 489,
+        "goals": 4,
+        "assists": 1,
+        "shotsOnTarget": 12,
+        "minutesPerGoal": 122
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "david-ospina-2014",
+      "name": "David Ospina",
+      "country": "Colombia",
+      "year": 2014,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 4,
+        "minutes": 359,
+        "cleanSheets": 2,
+        "savesPerGame": 4.5,
+        "goalsAgainst": 3
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "camilo-zuniga-2014",
+      "name": "Camilo Zúñiga",
+      "country": "Colombia",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 5,
+        "minutes": 428,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "mario-yepes-2014",
+      "name": "Mario Yepes",
+      "country": "Colombia",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 4,
+        "minutes": 327,
+        "tacklesPerGame": 2.3,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common",
+      "captain": true
+    },
+    {
+      "id": "cristian-zapata-2014",
+      "name": "Cristián Zapata",
+      "country": "Colombia",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 4,
+        "minutes": 339,
+        "tacklesPerGame": 3.2,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "pablo-armero-2014",
+      "name": "Pablo Armero",
+      "country": "Colombia",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 4,
+        "minutes": 339,
+        "tacklesPerGame": 2.3,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "juan-cuadrado-2014",
+      "name": "Juan Cuadrado",
+      "country": "Colombia",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 5,
+        "minutes": 419,
+        "goals": 1,
+        "assists": 4,
+        "keyPassesPerGame": 2.9,
+        "tacklesPerGame": 2.4
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "carlos-sanchez-2014",
+      "name": "Carlos Sánchez",
+      "country": "Colombia",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 32,
+      "stats": {
+        "matches": 4,
+        "minutes": 332,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.4,
+        "tacklesPerGame": 2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "abel-aguilar-2014",
+      "name": "Abel Aguilar",
+      "country": "Colombia",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 5,
+        "minutes": 404,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.2,
+        "tacklesPerGame": 1.7
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "james-rodriguez-2014",
+      "name": "James Rodríguez",
+      "country": "Colombia",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 5,
+        "minutes": 415,
+        "goals": 6,
+        "assists": 2,
+        "keyPassesPerGame": 3.5,
+        "tacklesPerGame": 2.5
+      },
+      "honors": {
+        "quarterfinalist": true,
+        "goldenBoot": true,
+        "allTournament": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "teofilo-gutierrez-2014",
+      "name": "Teófilo Gutiérrez",
+      "country": "Colombia",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 5,
+        "minutes": 433,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 4,
+        "minutesPerGoal": 433
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "jackson-martinez-2014",
+      "name": "Jackson Martínez",
+      "country": "Colombia",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 5,
+        "minutes": 438,
+        "goals": 2,
+        "assists": 0,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 219
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "hugo-lloris-2014",
+      "name": "Hugo Lloris",
+      "country": "France",
+      "year": 2014,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 4,
+        "minutes": 336,
+        "cleanSheets": 2,
+        "savesPerGame": 4.1,
+        "goalsAgainst": 3
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common",
+      "captain": true
+    },
+    {
+      "id": "mathieu-debuchy-2014",
+      "name": "Mathieu Debuchy",
+      "country": "France",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 4,
+        "minutes": 354,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "raphael-varane-2014",
+      "name": "Raphaël Varane",
+      "country": "France",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 4,
+        "minutes": 348,
+        "tacklesPerGame": 2.7,
+        "interceptionsPerGame": 2.8,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "mamadou-sakho-2014",
+      "name": "Mamadou Sakho",
+      "country": "France",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 312,
+        "tacklesPerGame": 2.4,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "patrice-evra-2014",
+      "name": "Patrice Evra",
+      "country": "France",
+      "year": 2014,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 348,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "yohan-cabaye-2014",
+      "name": "Yohan Cabaye",
+      "country": "France",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 5,
+        "minutes": 426,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.6,
+        "tacklesPerGame": 2.2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "paul-pogba-2014",
+      "name": "Paul Pogba",
+      "country": "France",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 5,
+        "minutes": 409,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 3,
+        "tacklesPerGame": 1.8
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "blaise-matuidi-2014",
+      "name": "Blaise Matuidi",
+      "country": "France",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 5,
+        "minutes": 441,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.4,
+        "tacklesPerGame": 2.2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "mathieu-valbuena-2014",
+      "name": "Mathieu Valbuena",
+      "country": "France",
+      "year": 2014,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 4,
+        "minutes": 347,
+        "goals": 0,
+        "assists": 2,
+        "keyPassesPerGame": 2,
+        "tacklesPerGame": 1.9
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "karim-benzema-2014",
+      "name": "Karim Benzema",
+      "country": "France",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 5,
+        "minutes": 428,
+        "goals": 3,
+        "assists": 2,
+        "shotsOnTarget": 10,
+        "minutesPerGoal": 143
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "olivier-giroud-2014",
+      "name": "Olivier Giroud",
+      "country": "France",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 5,
+        "minutes": 433,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 4,
+        "minutesPerGoal": 433
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "antoine-griezmann-2014",
+      "name": "Antoine Griezmann",
+      "country": "France",
+      "year": 2014,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": false,
+      "age": 27,
+      "stats": {
+        "matches": 3,
+        "minutes": 79,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 79
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    }
+  ]
+}

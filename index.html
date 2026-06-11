@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>World Cup U</title>
+  <link rel="stylesheet" href="css/game.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Top bar (hidden on menu) -->
+    <header id="topbar" class="hidden">
+      <button class="icon-btn" id="btn-home" title="Menu">‹ Menu</button>
+      <div id="topbar-title">World Cup U</div>
+      <div id="topbar-right"></div>
+    </header>
+
+    <main id="screen"><!-- screens render here --></main>
+
+    <!-- Toast --><div id="toast" class="toast hidden"></div>
+  </div>
+
+  <!-- Engine (order matters: rules -> scoring/pack -> data/collection -> game) -->
+  <script src="js/rules.js"></script>
+  <script src="js/scoring.js"></script>
+  <script src="js/pack-engine.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/collection.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

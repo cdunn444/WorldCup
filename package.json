@@ -1,0 +1,14 @@
+{
+  "name": "worldcup-u",
+  "version": "1.0.0",
+  "description": "World Cup U — a web-based World Cup card-collection game. Open packs, keep or discard, build your XI, see how far your tournament run goes.",
+  "private": true,
+  "scripts": {
+    "generate": "node tools/generate-data.js",
+    "simulate": "node tools/simulate.js 200000",
+    "validate": "node validate.js",
+    "build": "node tools/generate-data.js && node tools/simulate.js 200000 && node validate.js",
+    "serve": "node -e \"const http=require('http'),fs=require('fs'),p=require('path'),P=8080,T={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json'};http.createServer((q,s)=>{let f=p.join(process.cwd(),decodeURI(q.url.split('?')[0]));if(q.url==='/')f=p.join(process.cwd(),'index.html');fs.readFile(f,(e,d)=>{if(e){s.writeHead(404);return s.end('404')}s.writeHead(200,{'content-type':T[p.extname(f)]||'application/octet-stream'});s.end(d)})}).listen(P,()=>console.log('http://localhost:'+P))\""
+  },
+  "license": "MIT"
+}

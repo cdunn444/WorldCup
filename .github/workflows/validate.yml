@@ -1,0 +1,26 @@
+name: Validate dataset
+
+on:
+  push:
+    branches: [main, 'claude/**']
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Regenerate dataset and confirm it is committed in sync
+        run: |
+          node tools/generate-data.js
+          git diff --exit-code -- data/tournaments data/manifest.json data/countries.json \
+            || (echo "::error::data/ is out of sync with tools/rosters.js — run 'node tools/generate-data.js' and commit." && exit 1)
+
+      - name: Run data integrity validator
+        run: node validate.js

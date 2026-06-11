@@ -1,0 +1,1668 @@
+{
+  "year": 1986,
+  "host": "Mexico",
+  "cards": [
+    {
+      "id": "nery-pumpido-1986",
+      "name": "Nery Pumpido",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "GK",
+      "stage": "Champion",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 513,
+        "cleanSheets": 2,
+        "savesPerGame": 3,
+        "goalsAgainst": 5
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "jose-luis-cuciuffo-1986",
+      "name": "José Luis Cuciuffo",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 523,
+        "tacklesPerGame": 2.7,
+        "interceptionsPerGame": 2,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "jose-luis-brown-1986",
+      "name": "José Luis Brown",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 546,
+        "tacklesPerGame": 3.7,
+        "interceptionsPerGame": 3,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "finalGoalscorer": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "oscar-ruggeri-1986",
+      "name": "Oscar Ruggeri",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 576,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 2.6,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "julio-olarticoechea-1986",
+      "name": "Julio Olarticoechea",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 547,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 1.8,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "ricardo-giusti-1986",
+      "name": "Ricardo Giusti",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 615,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.2,
+        "tacklesPerGame": 2.2
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "sergio-batista-1986",
+      "name": "Sergio Batista",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 531,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.6,
+        "tacklesPerGame": 1.6
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "jorge-burruchaga-1986",
+      "name": "Jorge Burruchaga",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 7,
+        "minutes": 563,
+        "goals": 2,
+        "assists": 1,
+        "keyPassesPerGame": 3,
+        "tacklesPerGame": 1.8
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "finalGoalscorer": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "hector-enrique-1986",
+      "name": "Héctor Enrique",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 469,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "diego-maradona-1986",
+      "name": "Diego Maradona",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 555,
+        "goals": 5,
+        "assists": 5,
+        "shotsOnTarget": 13,
+        "minutesPerGoal": 111
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "goldenBall": true,
+        "allTournament": true
+      },
+      "rarity": "iconic",
+      "captain": true
+    },
+    {
+      "id": "jorge-valdano-1986",
+      "name": "Jorge Valdano",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 507,
+        "goals": 4,
+        "assists": 0,
+        "shotsOnTarget": 11,
+        "minutesPerGoal": 127
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "finalGoalscorer": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "pedro-pasculli-1986",
+      "name": "Pedro Pasculli",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Champion",
+      "starter": false,
+      "age": 24,
+      "stats": {
+        "matches": 4,
+        "minutes": 127,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 3,
+        "minutesPerGoal": 127
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "nestor-clausen-1986",
+      "name": "Néstor Clausen",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Champion",
+      "starter": false,
+      "age": 28,
+      "stats": {
+        "matches": 2,
+        "minutes": 46,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 1.8,
+        "cleanSheets": 1,
+        "goalsScored": 0
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "marcelo-trobbiani-1986",
+      "name": "Marcelo Trobbiani",
+      "country": "Argentina",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Champion",
+      "starter": false,
+      "age": 25,
+      "stats": {
+        "matches": 4,
+        "minutes": 106,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 1.8,
+        "tacklesPerGame": 1.2
+      },
+      "honors": {
+        "tournamentWinner": true,
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "harald-schumacher-1986",
+      "name": "Harald Schumacher",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "GK",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 549,
+        "cleanSheets": 2,
+        "savesPerGame": 4.5,
+        "goalsAgainst": 5
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "thomas-berthold-1986",
+      "name": "Thomas Berthold",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 521,
+        "tacklesPerGame": 2.6,
+        "interceptionsPerGame": 1.9,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "karlheinz-forster-1986",
+      "name": "Karlheinz Förster",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 481,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2.7,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "ditmar-jakobs-1986",
+      "name": "Ditmar Jakobs",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 577,
+        "tacklesPerGame": 2.9,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "hans-peter-briegel-1986",
+      "name": "Hans-Peter Briegel",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 570,
+        "tacklesPerGame": 3.7,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "andreas-brehme-1986",
+      "name": "Andreas Brehme",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 6,
+        "minutes": 537,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2.6,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "norbert-eder-1986",
+      "name": "Norbert Eder",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 614,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.3,
+        "tacklesPerGame": 2
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "lothar-matthaus-1986",
+      "name": "Lothar Matthäus",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 6,
+        "minutes": 538,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 3.1,
+        "tacklesPerGame": 2.6
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "felix-magath-1986",
+      "name": "Felix Magath",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 479,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.6,
+        "tacklesPerGame": 1.9
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "klaus-allofs-1986",
+      "name": "Klaus Allofs",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 630,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 630
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "karl-heinz-rummenigge-1986",
+      "name": "Karl-Heinz Rummenigge",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 6,
+        "minutes": 470,
+        "goals": 2,
+        "assists": 1,
+        "shotsOnTarget": 7,
+        "minutesPerGoal": 235
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "finalGoalscorer": true
+      },
+      "rarity": "legendary",
+      "captain": true
+    },
+    {
+      "id": "rudi-voller-1986",
+      "name": "Rudi Völler",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 7,
+        "minutes": 548,
+        "goals": 3,
+        "assists": 0,
+        "shotsOnTarget": 9,
+        "minutesPerGoal": 183
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "finalGoalscorer": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "dieter-hoene-1986",
+      "name": "Dieter Hoeneß",
+      "country": "West Germany",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Finalist",
+      "starter": false,
+      "age": 25,
+      "stats": {
+        "matches": 1,
+        "minutes": 41,
+        "goals": 0,
+        "assists": 0,
+        "shotsOnTarget": 3,
+        "minutesPerGoal": 41
+      },
+      "honors": {
+        "finalist": true,
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "joel-bats-1986",
+      "name": "Joël Bats",
+      "country": "France",
+      "year": 1986,
+      "position": "GK",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 561,
+        "cleanSheets": 2,
+        "savesPerGame": 4,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "manuel-amoros-1986",
+      "name": "Manuel Amoros",
+      "country": "France",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 6,
+        "minutes": 514,
+        "tacklesPerGame": 3.4,
+        "interceptionsPerGame": 2.7,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "patrick-battiston-1986",
+      "name": "Patrick Battiston",
+      "country": "France",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 628,
+        "tacklesPerGame": 2.4,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "maxime-bossis-1986",
+      "name": "Maxime Bossis",
+      "country": "France",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 7,
+        "minutes": 583,
+        "tacklesPerGame": 3.1,
+        "interceptionsPerGame": 2.6,
+        "cleanSheets": 3,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "william-ayache-1986",
+      "name": "William Ayache",
+      "country": "France",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 522,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 1.8,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "jean-tigana-1986",
+      "name": "Jean Tigana",
+      "country": "France",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 7,
+        "minutes": 596,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 2.6,
+        "tacklesPerGame": 2
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "luis-fernandez-1986",
+      "name": "Luis Fernández",
+      "country": "France",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 7,
+        "minutes": 607,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 2.6,
+        "tacklesPerGame": 2.3
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "alain-giresse-1986",
+      "name": "Alain Giresse",
+      "country": "France",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 7,
+        "minutes": 581,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 2.8,
+        "tacklesPerGame": 1.9
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "michel-platini-1986",
+      "name": "Michel Platini",
+      "country": "France",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 7,
+        "minutes": 605,
+        "goals": 2,
+        "assists": 2,
+        "keyPassesPerGame": 3,
+        "tacklesPerGame": 2.7
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare",
+      "captain": true
+    },
+    {
+      "id": "yannick-stopyra-1986",
+      "name": "Yannick Stopyra",
+      "country": "France",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 7,
+        "minutes": 571,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 4,
+        "minutesPerGoal": 571
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "jean-pierre-papin-1986",
+      "name": "Jean-Pierre Papin",
+      "country": "France",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 6,
+        "minutes": 521,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 521
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "bruno-bellone-1986",
+      "name": "Bruno Bellone",
+      "country": "France",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": false,
+      "age": 26,
+      "stats": {
+        "matches": 1,
+        "minutes": 26,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 4,
+        "minutesPerGoal": 26
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "jean-marie-pfaff-1986",
+      "name": "Jean-Marie Pfaff",
+      "country": "Belgium",
+      "year": 1986,
+      "position": "GK",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 473,
+        "cleanSheets": 3,
+        "savesPerGame": 3.8,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "eric-gerets-1986",
+      "name": "Eric Gerets",
+      "country": "Belgium",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 6,
+        "minutes": 486,
+        "tacklesPerGame": 3.1,
+        "interceptionsPerGame": 2.8,
+        "cleanSheets": 3,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon",
+      "captain": true
+    },
+    {
+      "id": "michel-de-wolf-1986",
+      "name": "Michel De Wolf",
+      "country": "Belgium",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 528,
+        "tacklesPerGame": 1.8,
+        "interceptionsPerGame": 1.6,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "stephane-demol-1986",
+      "name": "Stéphane Demol",
+      "country": "Belgium",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 6,
+        "minutes": 534,
+        "tacklesPerGame": 3,
+        "interceptionsPerGame": 1.8,
+        "cleanSheets": 2,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "franky-vercauteren-1986",
+      "name": "Franky Vercauteren",
+      "country": "Belgium",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 6,
+        "minutes": 513,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.7,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "enzo-scifo-1986",
+      "name": "Enzo Scifo",
+      "country": "Belgium",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 7,
+        "minutes": 618,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 3,
+        "tacklesPerGame": 2.4
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "jan-ceulemans-1986",
+      "name": "Jan Ceulemans",
+      "country": "Belgium",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 6,
+        "minutes": 508,
+        "goals": 3,
+        "assists": 0,
+        "shotsOnTarget": 9,
+        "minutesPerGoal": 169
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "nico-claesen-1986",
+      "name": "Nico Claesen",
+      "country": "Belgium",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 7,
+        "minutes": 615,
+        "goals": 2,
+        "assists": 0,
+        "shotsOnTarget": 7,
+        "minutesPerGoal": 308
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "daniel-veyt-1986",
+      "name": "Daniel Veyt",
+      "country": "Belgium",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Semifinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 7,
+        "minutes": 586,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 3,
+        "minutesPerGoal": 586
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "leo-clijsters-1986",
+      "name": "Leo Clijsters",
+      "country": "Belgium",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Semifinalist",
+      "starter": false,
+      "age": 27,
+      "stats": {
+        "matches": 3,
+        "minutes": 127,
+        "tacklesPerGame": 2,
+        "interceptionsPerGame": 2.2,
+        "cleanSheets": 1,
+        "goalsScored": 1
+      },
+      "honors": {
+        "semifinalist": true,
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "carlos-1986",
+      "name": "Carlos",
+      "country": "Brazil",
+      "year": 1986,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 5,
+        "minutes": 426,
+        "cleanSheets": 2,
+        "savesPerGame": 3.4,
+        "goalsAgainst": 3
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "josimar-1986",
+      "name": "Josimar",
+      "country": "Brazil",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 5,
+        "minutes": 448,
+        "tacklesPerGame": 2.9,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 2,
+        "goalsScored": 2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "julio-cesar-1986",
+      "name": "Júlio César",
+      "country": "Brazil",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 5,
+        "minutes": 404,
+        "tacklesPerGame": 2.6,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "edinho-1986",
+      "name": "Edinho",
+      "country": "Brazil",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 313,
+        "tacklesPerGame": 2.4,
+        "interceptionsPerGame": 1.8,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "branco-1986",
+      "name": "Branco",
+      "country": "Brazil",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 28,
+      "stats": {
+        "matches": 5,
+        "minutes": 414,
+        "tacklesPerGame": 3.2,
+        "interceptionsPerGame": 1.9,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "alemao-1986",
+      "name": "Alemão",
+      "country": "Brazil",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 320,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2,
+        "tacklesPerGame": 1.7
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "elzo-1986",
+      "name": "Elzo",
+      "country": "Brazil",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 4,
+        "minutes": 328,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.1,
+        "tacklesPerGame": 1.8
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "socrates-1986",
+      "name": "Sócrates",
+      "country": "Brazil",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 5,
+        "minutes": 447,
+        "goals": 1,
+        "assists": 1,
+        "keyPassesPerGame": 3.3,
+        "tacklesPerGame": 2.5
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon",
+      "captain": true
+    },
+    {
+      "id": "junior-1986",
+      "name": "Júnior",
+      "country": "Brazil",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 4,
+        "minutes": 344,
+        "goals": 1,
+        "assists": 0,
+        "keyPassesPerGame": 2.7,
+        "tacklesPerGame": 2
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "careca-1986",
+      "name": "Careca",
+      "country": "Brazil",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 4,
+        "minutes": 338,
+        "goals": 5,
+        "assists": 1,
+        "shotsOnTarget": 12,
+        "minutesPerGoal": 68
+      },
+      "honors": {
+        "quarterfinalist": true,
+        "allTournament": true
+      },
+      "rarity": "rare"
+    },
+    {
+      "id": "muller-1986",
+      "name": "Müller",
+      "country": "Brazil",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 5,
+        "minutes": 450,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "minutesPerGoal": 450
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "peter-shilton-1986",
+      "name": "Peter Shilton",
+      "country": "England",
+      "year": 1986,
+      "position": "GK",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 5,
+        "minutes": 412,
+        "cleanSheets": 2,
+        "savesPerGame": 3.7,
+        "goalsAgainst": 4
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "gary-stevens-1986",
+      "name": "Gary Stevens",
+      "country": "England",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 5,
+        "minutes": 442,
+        "tacklesPerGame": 2.3,
+        "interceptionsPerGame": 2,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "terry-butcher-1986",
+      "name": "Terry Butcher",
+      "country": "England",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 30,
+      "stats": {
+        "matches": 4,
+        "minutes": 356,
+        "tacklesPerGame": 3.5,
+        "interceptionsPerGame": 2.4,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "terry-fenwick-1986",
+      "name": "Terry Fenwick",
+      "country": "England",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 27,
+      "stats": {
+        "matches": 5,
+        "minutes": 425,
+        "tacklesPerGame": 3.2,
+        "interceptionsPerGame": 2.3,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "kenny-sansom-1986",
+      "name": "Kenny Sansom",
+      "country": "England",
+      "year": 1986,
+      "position": "DEF",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 4,
+        "minutes": 327,
+        "tacklesPerGame": 2.8,
+        "interceptionsPerGame": 2.1,
+        "cleanSheets": 2,
+        "goalsScored": 0
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "glenn-hoddle-1986",
+      "name": "Glenn Hoddle",
+      "country": "England",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 24,
+      "stats": {
+        "matches": 5,
+        "minutes": 395,
+        "goals": 0,
+        "assists": 2,
+        "keyPassesPerGame": 2.5,
+        "tacklesPerGame": 2.3
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "uncommon"
+    },
+    {
+      "id": "peter-reid-1986",
+      "name": "Peter Reid",
+      "country": "England",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 4,
+        "minutes": 350,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 2.5,
+        "tacklesPerGame": 2.1
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "trevor-steven-1986",
+      "name": "Trevor Steven",
+      "country": "England",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 29,
+      "stats": {
+        "matches": 5,
+        "minutes": 422,
+        "goals": 0,
+        "assists": 0,
+        "keyPassesPerGame": 2.5,
+        "tacklesPerGame": 1.6
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "steve-hodge-1986",
+      "name": "Steve Hodge",
+      "country": "England",
+      "year": 1986,
+      "position": "MID",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 25,
+      "stats": {
+        "matches": 4,
+        "minutes": 314,
+        "goals": 0,
+        "assists": 1,
+        "keyPassesPerGame": 2.4,
+        "tacklesPerGame": 1.9
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    },
+    {
+      "id": "gary-lineker-1986",
+      "name": "Gary Lineker",
+      "country": "England",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 31,
+      "stats": {
+        "matches": 5,
+        "minutes": 428,
+        "goals": 6,
+        "assists": 1,
+        "shotsOnTarget": 14,
+        "minutesPerGoal": 71
+      },
+      "honors": {
+        "quarterfinalist": true,
+        "goldenBoot": true
+      },
+      "rarity": "legendary"
+    },
+    {
+      "id": "peter-beardsley-1986",
+      "name": "Peter Beardsley",
+      "country": "England",
+      "year": 1986,
+      "position": "FWD",
+      "stage": "Quarterfinalist",
+      "starter": true,
+      "age": 26,
+      "stats": {
+        "matches": 4,
+        "minutes": 346,
+        "goals": 1,
+        "assists": 0,
+        "shotsOnTarget": 6,
+        "minutesPerGoal": 346
+      },
+      "honors": {
+        "quarterfinalist": true
+      },
+      "rarity": "common"
+    }
+  ]
+}
