@@ -123,44 +123,36 @@ body {
 @keyframes shimmer { 0%{ transform: translateX(-30%);} 100%{ transform: translateX(30%);} }
 
 .reveal-area { width: 100%; display: flex; flex-direction: column; align-items: center; min-height: 300px; }
-.assign-hint { margin-top: 12px; font-size: 13px; font-weight: 700; letter-spacing: .3px; }
-.assign-hint.open { color: var(--gold); }
-.assign-hint.full, .assign-hint.dup { color: var(--ink-dim); }
-.kd-buttons { display: flex; gap: 14px; width: 100%; max-width: 360px; margin-top: 12px; }
+.kd-buttons { display: flex; gap: 14px; width: 100%; max-width: 360px; margin-top: 14px; }
 .kd-buttons .btn { flex: 1; }
 
-/* --- anchored team key ------------------------------------------------ */
-.team-key {
+/* --- revealed-players strip (anchored during the swipe) --------------- */
+.reveal-strip {
   position: sticky; bottom: 0; width: 100%; margin-top: 18px;
   background: rgba(11,16,32,.92); backdrop-filter: blur(8px);
-  border-top: 1px solid var(--line); padding: 10px 4px 12px;
+  border-top: 1px solid var(--line); padding: 10px 6px 12px;
 }
-.tk-title { font-size: 10px; letter-spacing: 1px; color: var(--ink-dim); text-align: center; text-transform: uppercase; margin-bottom: 8px; }
-.tk-groups { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-.key-group {
-  border: 2px solid var(--line); border-radius: 10px; padding: 8px 6px;
-  background: var(--panel); transition: transform .12s ease, box-shadow .15s ease, border-color .15s ease;
+.reveal-strip .rs-label { font-size: 11px; letter-spacing: 1px; color: var(--ink-dim); text-transform: uppercase; margin-bottom: 8px; }
+.reveal-strip .rs-row { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; }
+.rs-chip {
+  flex: 0 0 auto; display: inline-flex; align-items: center; gap: 4px;
+  padding: 4px 8px; border-radius: 999px; font-size: 14px; font-weight: 800;
 }
-.key-group .kg-head { display: flex; align-items: center; justify-content: space-between; gap: 4px; }
-.key-group .kg-label { font-weight: 800; font-size: 13px; }
-.key-group .kg-count { font-size: 11px; color: var(--ink-dim); }
-.key-group .kg-tag { font-size: 13px; min-width: 14px; text-align: right; }
-.key-group .kg-pips { display: flex; gap: 3px; flex-wrap: wrap; margin-top: 6px; }
-.key-group .pip {
-  width: 16px; height: 16px; border-radius: 50%; background: #0006;
-  border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; font-size: 10px;
-}
-.key-group .pip.on { border: 0; font-size: 11px; }
-.key-group.full { opacity: .85; }
-.key-group.lit { cursor: pointer; }
-.key-group.lit.lit-open {
-  border-color: var(--gold); box-shadow: 0 0 0 3px rgba(255,210,74,.3), 0 0 18px rgba(255,210,74,.25);
-  transform: translateY(-3px); animation: keyPulse 1.4s ease-in-out infinite;
-}
-.key-group.lit.lit-open .kg-tag { color: var(--gold); }
-.key-group.lit.lit-full, .key-group.lit.lit-dup { border-color: var(--red); }
-.key-group.shake { animation: shakeX .3s; }
-@keyframes keyPulse { 0%,100%{ box-shadow: 0 0 0 3px rgba(255,210,74,.3), 0 0 14px rgba(255,210,74,.2);} 50%{ box-shadow: 0 0 0 4px rgba(255,210,74,.45), 0 0 22px rgba(255,210,74,.4);} }
+.rs-chip i { font-style: normal; font-size: 9px; opacity: .85; }
+
+/* --- build: player pool ---------------------------------------------- */
+.build-pitch { max-height: 46vh; }
+.pool { margin-top: 4px; }
+.pool-group { margin-bottom: 14px; }
+.pool-group .pg-head { display: flex; justify-content: space-between; font-size: 12px; font-weight: 800; letter-spacing: 1px; margin-bottom: 6px; }
+.pool-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); gap: 8px; }
+.pool-card { cursor: pointer; transition: transform .1s ease; }
+.pool-card:active { transform: scale(.96); }
+.pool-card.placed { opacity: .32; pointer-events: none; }
+.pool-card.dup { opacity: .5; }
+.pool-card.dup .mini-card { border-style: dashed; }
+.slot.shake { animation: shake .3s; }
+.pool-card.shake { animation: shakeX .3s; }
 @keyframes shakeX { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-5px)} 75%{transform:translateX(5px)} }
 
 /* --- card ------------------------------------------------------------- */

@@ -151,7 +151,7 @@
         <div class="trophy">🏆</div>
         <div class="logo">FIFA Card Collector</div>
         <h1>World Cup U</h1>
-        <div class="tag">Open packs · build your XI live · win the World Cup</div>
+        <div class="tag">Open 3 decks · build your XI · win the World Cup</div>
         <div class="actions">
           <button class="btn lg green" id="m-play">▶ PLAY</button>
           <button class="btn ghost" id="m-binder">📒 Binder</button>
@@ -185,76 +185,57 @@
 
   function confirmLeaveToMenu() {
     if (S.session && S.session.phase !== 'done') {
-      if (!confirm('Leave this session? Cards you have kept so far will still be deposited to your collection.')) return;
-      // Treat as cancel: deposit kept cards, no result recorded as a played session? Spec: cancel deposits cards.
-      depositAndEnd('cancelled');
+      if (!confirm('Leave this session? You will lose this draw — nothing is added to your collection until you submit an XI.')) return;
+      S.session = null;
     }
     showMenu();
   }
 
   /* =====================================================================
-   * SESSION START — roll up to 3 packs; assign players to the team key as you
-   * flip. Groups lock when full; the result fires the moment the XI is full
-   * (or the cards run out).
+   * SESSION FLOW
+   * Open three decks and swipe through every card — nothing is committed during
+   * the reveal. All 30 cards land in your pool, then you build a 4-3-3 XI from
+   * any combination. Seeing everything first means you can always field a team.
    * =================================================================== */
   function startSession() {
     const seed = (Math.random() * 0xffffffff) >>> 0;
-    const packs = PackEngine.openSession(S.data.cards, seed);
+    const decks = PackEngine.openSession(S.data.cards, seed);
     S.session = {
-      seed, packs,
-      packIndex: 0, cardIndex: 0,
-      groups: { GK: [], DEF: [], MID: [], FWD: [] }, // assigned cards by group
-      kept: [],            // flat list of assigned cards (for deposit)
-      packAssigned: 0, packDeclined: 0,
-      phase: 'opening',
+      seed, decks,
+      deckIndex: 0, cardIndex: 0,
+      pool: [],          // [{uid, card}] every revealed card — all usable
+      slots: {},         // formation slot id -> uid
+      phase: 'reveal',
     };
-    showPackIcon();
+    showDeckIcon();
   }
 
-  const cap = (pos) => Rules.POSITION_GROUPS[pos];
-  const squadCount = () => S.session.kept.length;
-  const squadFull = () => squadCount() >= 11;
-  function nameOnTeam(name) {
-    return S.session.kept.some((c) => c.name === name);
-  }
-  // How a card may interact with its position group right now.
-  function assignState(card) {
-    const g = S.session.groups[card.position];
-    if (g.length >= cap(card.position)) return 'full';   // group locked
-    if (nameOnTeam(card.name)) return 'dup';             // player already in XI
-    return 'open';                                        // assignable
-  }
-
-  function seenCount() {
-    let n = 0;
-    for (let p = 0; p < S.session.packIndex; p++) n += S.session.packs[p].length;
-    n += S.session.cardIndex;
-    return n;
-  }
   const totalCards = () => Rules.NUM_PACKS * Rules.PACK_SIZE;
+  const revealedCount = () => S.session.pool.length;
 
-  function showPackIcon() {
+  /* --- reveal ----------------------------------------------------------- */
+  function showDeckIcon() {
     const ses = S.session;
-    topbar(`Pack ${ses.packIndex + 1} of ${Rules.NUM_PACKS}`, `XI ${squadCount()}/11`);
+    topbar(`Deck ${ses.deckIndex + 1} of ${Rules.NUM_PACKS}`, `${revealedCount()}/${totalCards()}`);
     screenEl().innerHTML = `
       <div class="pack-stage">
-        ${hudHTML()}
+        ${revealHud()}
         <div class="pack-icon" id="pack-icon">
           <div class="pk-emoji">🎴</div>
-          <div class="pk-label">PACK ${ses.packIndex + 1}</div>
+          <div class="pk-label">DECK ${ses.deckIndex + 1}</div>
         </div>
-        <p class="muted center">Tap the pack to open · 10 cards · assign each to your XI or decline</p>
+        <p class="muted center">Tap to open · swipe through all 10 cards · they all join your pool for team building</p>
       </div>`;
-    $('#pack-icon').onclick = () => { ses.cardIndex = 0; ses.packAssigned = 0; ses.packDeclined = 0; revealCard(); };
+    $('#pack-icon').onclick = () => { ses.cardIndex = 0; revealCard(); };
   }
 
-  function hudHTML() {
-    const pct = (squadCount() / 11) * 100;
+  function revealHud() {
+    const pct = (revealedCount() / totalCards()) * 100;
     return `
       <div style="width:100%">
         <div class="hud">
-          <span class="pill">Cards seen: <b>${seenCount()}</b> / ${totalCards()}</span>
-          <span class="pill">Squad: <b>${squadCount()}</b> / 11</span>
+          <span class="pill">Deck <b>${S.session.deckIndex + 1}</b> / ${Rules.NUM_PACKS}</span>
+          <span class="pill">Players: <b>${revealedCount()}</b> / ${totalCards()}</span>
         </div>
         <div class="progress"><i style="width:${pct}%"></i></div>
       </div>`;
@@ -262,198 +243,177 @@
 
   function revealCard() {
     const ses = S.session;
-    const pack = ses.packs[ses.packIndex];
-    const card = pack[ses.cardIndex];
-    const state = assignState(card);
-    const hint = state === 'open' ? `Tap ${card.position} below to add`
-               : state === 'full' ? `${card.position} is full — decline`
-               : 'Already on your team — decline';
-    topbar(`Pack ${ses.packIndex + 1} of ${Rules.NUM_PACKS}`, `XI ${squadCount()}/11`);
+    const deck = ses.decks[ses.deckIndex];
+    const card = deck[ses.cardIndex];
+    const lastInDeck = ses.cardIndex >= deck.length - 1;
+    const lastDeck = ses.deckIndex >= Rules.NUM_PACKS - 1;
+    const nextLabel = lastInDeck ? (lastDeck ? 'BUILD YOUR XI →' : `OPEN DECK ${ses.deckIndex + 2} →`) : 'NEXT ›';
+    topbar(`Deck ${ses.deckIndex + 1} of ${Rules.NUM_PACKS}`, `Card ${ses.cardIndex + 1}/${deck.length}`);
     screenEl().innerHTML = `
       <div class="pack-stage">
-        ${hudHTML()}
+        ${revealHud()}
         <div class="reveal-area">
           <div id="card-host" class="flip-in">${cardHTML(card)}</div>
-          <div class="assign-hint ${state}">${hint}</div>
           <div class="kd-buttons">
-            <button class="btn red" id="btn-decline">DECLINE</button>
+            <button class="btn" id="btn-next">${nextLabel}</button>
           </div>
+          <p class="muted center" style="margin-top:8px">Tap the card or NEXT to continue</p>
         </div>
-        ${teamKeyHTML(card)}
+        ${revealStrip()}
       </div>`;
-    $('#btn-decline').onclick = () => resolveCard(null);
-    wireTeamKey(card);
+    $('#btn-next').onclick = advanceReveal;
+    $('#card-host').onclick = advanceReveal;
   }
 
-  /* The anchored team key: 4 position groups with capacity pips. The current
-   * card's group lights up; tapping it assigns the card. */
-  function teamKeyHTML(card) {
-    const groups = Rules.GROUP_ORDER.map((pos) => {
-      const assigned = S.session.groups[pos];
-      const capacity = cap(pos);
-      const isCurrent = card && card.position === pos;
-      const state = isCurrent ? assignState(card) : '';
-      const cls = ['key-group'];
-      if (isCurrent) cls.push('lit', 'lit-' + state);
-      if (assigned.length >= capacity) cls.push('full');
-
-      let pips = '';
-      for (let i = 0; i < capacity; i++) {
-        const c = assigned[i];
-        pips += c
-          ? `<span class="pip on" style="background:${colorsOf(c.country).primary};color:${inkOn(colorsOf(c.country).primary)}">${flagOf(c.country)}</span>`
-          : `<span class="pip"></span>`;
-      }
-      const tag = isCurrent && state === 'open' ? '＋'
-                : isCurrent && state === 'full' ? '🔒'
-                : isCurrent && state === 'dup' ? '⛔' : '';
-      return `<div class="${cls.join(' ')}" data-group="${pos}">
-                <div class="kg-head"><span class="kg-label">${pos}</span><span class="kg-count">${assigned.length}/${capacity}</span><span class="kg-tag">${tag}</span></div>
-                <div class="kg-pips">${pips}</div>
-              </div>`;
+  function revealStrip() {
+    const pool = S.session.pool;
+    if (!pool.length) return `<div class="reveal-strip"><div class="rs-label">Revealed players collect here</div></div>`;
+    const chips = pool.slice().reverse().map(({ card }) => {
+      const { primary } = colorsOf(card.country);
+      return `<span class="rs-chip" style="background:${primary};color:${inkOn(primary)}" title="${esc(card.name)}">${flagOf(card.country)}<i>${card.position}</i></span>`;
     }).join('');
-    return `<div class="team-key"><div class="tk-title">YOUR XI · tap a glowing position to add</div><div class="tk-groups">${groups}</div></div>`;
+    return `<div class="reveal-strip"><div class="rs-label">Your players (${pool.length})</div><div class="rs-row">${chips}</div></div>`;
   }
 
-  function wireTeamKey(card) {
-    screenEl().querySelectorAll('.key-group').forEach((el) => {
-      const pos = el.dataset.group;
-      el.onclick = () => {
-        if (card.position !== pos) { toast(`That's a ${card.position} — add to ${card.position}`); return; }
-        const state = assignState(card);
-        if (state === 'full') { shake(el); toast(`${pos} is full`); return; }
-        if (state === 'dup') { shake(el); toast(`${card.name} is already on your team`); return; }
-        resolveCard(pos);
-      };
-    });
-  }
-
-  function shake(el) { el.classList.add('shake'); setTimeout(() => el.classList.remove('shake'), 320); }
-
-  // Resolve the current card: assign to `pos` (group) or decline (pos == null).
-  function resolveCard(pos) {
+  function advanceReveal() {
     const ses = S.session;
-    const pack = ses.packs[ses.packIndex];
-    const card = pack[ses.cardIndex];
-    const host = $('#card-host');
-
-    if (pos) {
-      ses.groups[pos].push(card);
-      ses.kept.push(card);
-      ses.packAssigned++;
-      host.classList.add('kept-fly');
-    } else {
-      ses.packDeclined++;
-      host.classList.add('discard-fade');
-    }
-    const decline = $('#btn-decline'); if (decline) decline.disabled = true;
-
+    const deck = ses.decks[ses.deckIndex];
+    const card = deck[ses.cardIndex];
+    ses.pool.push({ uid: ses.pool.length, card });
+    const host = $('#card-host'); if (host) { host.onclick = null; host.classList.add('kept-fly'); }
+    const btn = $('#btn-next'); if (btn) btn.disabled = true;
     setTimeout(() => {
-      // XI complete -> straight to the result, no matter how many cards remain.
-      if (squadFull()) { finalize(); return; }
       ses.cardIndex++;
-      if (ses.cardIndex >= pack.length) {
-        const last = ses.packIndex >= Rules.NUM_PACKS - 1;
-        if (last) finalize();          // out of cards
-        else showPackSummary();
+      if (ses.cardIndex >= deck.length) {
+        ses.deckIndex++;
+        if (ses.deckIndex >= Rules.NUM_PACKS) startBuild();
+        else showDeckIcon();
       } else {
         revealCard();
       }
-    }, 320);
-  }
-
-  function showPackSummary() {
-    const ses = S.session;
-    topbar(`Pack ${ses.packIndex + 1} complete`);
-    screenEl().innerHTML = `
-      <div class="summary">
-        <h2>Pack ${ses.packIndex + 1} complete</h2>
-        <div class="big">＋ ${ses.packAssigned} &nbsp; ✕ ${ses.packDeclined}</div>
-        <p class="muted">Added ${ses.packAssigned}, declined ${ses.packDeclined}. Squad so far: <b>${squadCount()}</b> / 11.</p>
-        <div class="mt"><button class="btn lg" id="next">Open Pack ${ses.packIndex + 2} →</button></div>
-      </div>`;
-    $('#next').onclick = () => { ses.packIndex++; showPackIcon(); };
+    }, 300);
   }
 
   /* =====================================================================
-   * FINALIZE + RESULT
-   * The XI is built live during the flip. When it's full (or the cards run
-   * out) we score it straight away — no separate build screen.
+   * BUILD — assemble a 4-3-3 from the full 30-card pool.
+   * Tap a player to drop them into the first open slot of their position;
+   * tap a player already on the pitch to remove them. Swap freely, submit at 11.
    * =================================================================== */
   const ROW_TOP = [88, 67, 45, 22];
 
-  // Pair the assigned cards with on-pitch formation slots, in group order.
-  function buildPlacements() {
-    const ses = S.session;
-    const queue = { GK: ses.groups.GK.slice(), DEF: ses.groups.DEF.slice(),
-                    MID: ses.groups.MID.slice(), FWD: ses.groups.FWD.slice() };
-    const placements = [];
-    for (const slot of Rules.FORMATION) {
-      const card = queue[slot.position].shift();
-      if (card) placements.push({ card, position: card.position, slot });
-    }
-    return placements;
+  function startBuild() {
+    S.session.phase = 'build';
+    S.session.slots = {};
+    showBuild();
   }
 
-  function missingPositions() {
-    const need = Rules.POSITION_REQUIREMENTS;
-    const out = [];
+  function poolCard(uid) { const e = S.session.pool[uid]; return e && e.card; }
+  function xiCount() { return Object.keys(S.session.slots).length; }
+  function xiComplete() { return Rules.FORMATION.every((s) => S.session.slots[s.id] != null); }
+  function isPlaced(uid) { for (const k in S.session.slots) if (S.session.slots[k] === uid) return true; return false; }
+  function nameInXI(name) {
+    for (const sid in S.session.slots) {
+      const c = poolCard(S.session.slots[sid]);
+      if (c && c.name === name) return true;
+    }
+    return false;
+  }
+  function firstOpenSlot(pos) {
+    return Rules.FORMATION.find((s) => s.position === pos && S.session.slots[s.id] == null);
+  }
+  function shake(el) { el.classList.add('shake'); setTimeout(() => el.classList.remove('shake'), 320); }
+
+  function showBuild() {
+    const ses = S.session;
+    topbar('Build your XI', `${xiCount()}/11`);
+
+    const slotsHTML = Rules.FORMATION.map((slot) => {
+      const left = (slot.col + 0.5) * 20, top = ROW_TOP[slot.row];
+      const uid = ses.slots[slot.id];
+      const filled = uid != null;
+      const inner = filled ? miniCardHTML(poolCard(uid)) : `<span>${slot.label}</span>`;
+      return `<div class="slot ${filled ? 'filled' : ''}" data-slot="${slot.id}" style="left:${left}%;top:${top}%">
+                <div class="dot">${inner}</div>
+                ${filled ? '' : `<div class="slot-label">${slot.label}</div>`}
+              </div>`;
+    }).join('');
+
+    const placed = new Set(Object.values(ses.slots));
+    let poolHTML = '';
     for (const pos of Rules.GROUP_ORDER) {
-      const have = S.session.groups[pos].length;
-      if (have < need[pos]) out.push(`${need[pos] - have} ${pos}`);
+      const items = ses.pool.filter((e) => e.card.position === pos);
+      if (!items.length) continue;
+      const haveSlot = !!firstOpenSlot(pos);
+      const cards = items.map((e) => {
+        const isP = placed.has(e.uid);
+        const dup = !isP && nameInXI(e.card.name);
+        return `<div class="pool-card ${isP ? 'placed' : ''} ${dup ? 'dup' : ''}" data-uid="${e.uid}">${miniCardHTML(e.card)}</div>`;
+      }).join('');
+      poolHTML += `<div class="pool-group">
+          <div class="pg-head"><span>${pos}</span><span class="muted">${Rules.POSITION_GROUPS[pos]} in XI${haveSlot ? '' : ' · full'}</span></div>
+          <div class="pool-row">${cards}</div>
+        </div>`;
     }
-    return out;
+
+    screenEl().innerHTML = `
+      <div class="pitch build-pitch">${slotsHTML}</div>
+      <div class="build-bar">
+        <button class="btn green" id="submit" ${xiComplete() ? '' : 'disabled'}>SUBMIT XI · ${xiCount()}/11</button>
+        <button class="btn ghost" id="clear">Clear</button>
+      </div>
+      <div class="section-label">Your players · tap to add · tap a player on the pitch to remove</div>
+      <div class="pool">${poolHTML}</div>`;
+
+    wireBuild();
   }
 
-  function finalize() {
+  function wireBuild() {
     const ses = S.session;
-    let result;
-    if (squadFull()) {
-      const placements = buildPlacements();
-      const team = Scoring.scoreTeam(placements);
-      const evald = Scoring.evaluateOutcome(team, S.data.calibration);
-      result = Object.assign({ team, placements }, evald);
-    } else {
-      result = {
-        outcome: 'dnq', outcomeLabel: 'Did Not Qualify',
-        attackRating: null, defendRating: null, percentile: 0,
-        team: { attack: 0, defend: 0, total: 0 },
-        placements: buildPlacements(),
-        missing: missingPositions(),
+    screenEl().querySelectorAll('.pool-card').forEach((el) => {
+      const uid = +el.dataset.uid;
+      el.onclick = () => {
+        if (isPlaced(uid)) { toast('Already in your XI — tap them on the pitch to remove'); return; }
+        const card = poolCard(uid);
+        if (nameInXI(card.name)) { shake(el); toast(`${card.name} is already on your team`); return; }
+        const slot = firstOpenSlot(card.position);
+        if (!slot) { shake(el); toast(`All ${card.position} slots are full`); return; }
+        ses.slots[slot.id] = uid;
+        showBuild();
       };
-    }
+    });
+    screenEl().querySelectorAll('.slot').forEach((el) => {
+      el.onclick = () => {
+        const sid = el.dataset.slot;
+        if (ses.slots[sid] != null) { delete ses.slots[sid]; showBuild(); }
+      };
+    });
+    const submit = $('#submit'); if (submit) submit.onclick = submitXI;
+    const clear = $('#clear'); if (clear) clear.onclick = () => { ses.slots = {}; showBuild(); };
+  }
 
-    // Deposit + record once, at session end.
-    const keptIds = ses.kept.map((c) => c.id);
-    const teamSnapshot = result.placements.map((p) => p.card.id);
+  function submitXI() {
+    const ses = S.session;
+    if (!xiComplete()) { toast('Fill all 11 slots'); return; }
+    const placements = Rules.FORMATION.map((slot) => {
+      const card = poolCard(ses.slots[slot.id]);
+      return { card, position: card.position, slot };
+    });
+    const team = Scoring.scoreTeam(placements);
+    const evald = Scoring.evaluateOutcome(team, S.data.calibration);
+    const result = Object.assign({ team, placements }, evald);
+
+    const xiIds = placements.map((p) => p.card.id);
     Collection.depositSession(S.collection, {
-      keptIds,
+      keptIds: xiIds,
       outcome: result.outcome,
       outcomeLabel: result.outcomeLabel,
       attackRating: result.attackRating,
       defendRating: result.defendRating,
-      teamSnapshot,
+      teamSnapshot: xiIds,
     });
     ses.phase = 'done';
     ses.result = result;
     showResult(result);
-  }
-
-  function depositAndEnd(reason) {
-    // Used for cancel / leave: deposit kept cards but DON'T record a session result.
-    const ses = S.session;
-    if (!ses || ses.phase === 'done') { S.session = null; return; }
-    const now = new Date().toISOString();
-    for (const c of ses.kept) {
-      if (!S.collection.collection[c.id]) S.collection.collection[c.id] = { owned: 0, firstSeen: now };
-      S.collection.collection[c.id].owned += 1;
-    }
-    S.collection.stats.totalCardsCollected += ses.kept.length;
-    S.collection.stats.uniqueCardsCollected = Object.keys(S.collection.collection).length;
-    Collection.save(S.collection);
-    if (ses.kept.length) toast(`${ses.kept.length} cards deposited to your binder`);
-    ses.phase = 'done';
-    S.session = null;
   }
 
   function showResult(result) {
@@ -650,11 +610,11 @@
       <button class="btn ghost close" style="padding:6px 10px">✕</button>
       <h3>How to play</h3>
       <ol style="line-height:1.6;padding-left:18px">
-        <li>Open up to <b>3 packs</b> of 10 cards. Flip them one at a time.</li>
-        <li>Your XI sits in the <b>team key</b> at the bottom: 1 GK, 4 DEF, 3 MID, 3 FWD. The card's position lights up — <b>tap it to add</b> the player, or <b>DECLINE</b> to skip. Every choice is final.</li>
-        <li>A group <b>locks</b> once it's full, and one slot per player <b>name</b>.</li>
-        <li>The instant your XI is complete you get your <b>Attack & Defend</b> ratings and tournament result. Run out of cards first and you <b>Did Not Qualify</b>.</li>
-        <li>Every player you added lands in your <b>Binder</b>.</li>
+        <li>Open <b>3 decks</b> and swipe through all 10 cards in each. Nothing is locked in — every card joins your pool.</li>
+        <li>Build a <b>4-3-3 XI</b> (1 GK, 4 DEF, 3 MID, 3 FWD) from <b>any mix</b> of your 30 players. Tap a player to add them; tap a player on the pitch to remove. One per <b>name</b>.</li>
+        <li>Card <b>rarity is hidden</b> while you play — judge on stats and honors, not on a colour.</li>
+        <li><b>SUBMIT</b> for your <b>Attack & Defend</b> ratings and tournament result.</li>
+        <li>The XI you field lands in your <b>Binder</b>, where rarity is revealed.</li>
       </ol>
       <button class="btn full mt close">Got it</button>
     `);

@@ -1,11 +1,11 @@
 # World Cup U ⚽🏆
 
-A web-based World Cup **card-collection game**. Flip through packs and build a
-4-3-3 XI **live** — as each card is revealed, its position lights up in the team
-key at the bottom of the screen; tap it to add the player or decline to skip.
-Every choice is final. The instant your XI is full, your Attack and Defend
-ratings decide how deep your tournament run goes — from *Did Not Qualify* all
-the way to *World Cup Champion*. Every player you add lands in your **Binder**.
+A web-based World Cup **card-collection game**. Open three decks and swipe
+through every card — country-skinned, with rarity hidden so you judge on the
+stats. All 30 players join your pool, and you build a 4-3-3 XI from **any
+combination** of them on the formation pitch. Submit, and your Attack and Defend
+ratings decide how deep your run goes — all the way to *World Cup Champion*. The
+XI you field lands in your **Binder**, where rarity is finally revealed.
 
 Built per [`requirements`](#) as vanilla **HTML/CSS/JS** with no framework, all
 data loaded from JSON at runtime, and deployable straight to **GitHub Pages**.
@@ -31,21 +31,20 @@ To deploy: push to GitHub and enable **Pages** for the branch — the root
 
 ## Game loop
 
-1. **PLAY** → open a pack and flip cards one at a time.
-2. The **team key** anchored at the bottom holds your 4-3-3:
-   `1 GK · 4 DEF · 3 MID · 3 FWD`. The current card's position group lights up.
-   - **Tap the glowing group** to add the player, or **DECLINE** to skip.
-     Every choice is final — there's no undo and no rearranging.
-   - A group **locks** once it's full; further cards of that position can only
-     be declined. One player **name** per XI (no two versions of a player).
-   - Card **rarity is hidden** during play, so you judge on stats and honors
-     alone — not on a colour that gives the answer away.
-3. The **moment your XI is complete**, you get your Attack/Defend ratings
-   (45–99, Madden-style) and the tournament outcome — no separate build step.
-   Up to 3 packs (30 cards); run out before filling the XI and you
-   **Did Not Qualify**.
-4. Every player you added deposits into your Binder, where rarity *is* shown as
-   a collection reward.
+1. **PLAY** → open **Deck 1** and swipe through all 10 cards (tap the card or
+   NEXT). Nothing is committed — each card joins your pool. Repeat for Deck 2
+   and Deck 3, so you end with **30 players** to choose from.
+2. **Build your XI** on the 4-3-3 pitch — `1 GK · 4 DEF · 3 MID · 3 FWD` — from
+   **any combination** of your 30 players. Tap a player to drop them into the
+   first open slot of their position; tap a player on the pitch to remove them.
+   One player **name** per XI. Seeing everything first means you can always
+   field a team.
+   - Card **rarity is hidden** while you build, so you judge on stats and honors,
+     not on a colour that gives the answer away.
+3. **SUBMIT** → Attack/Defend ratings (45–99, Madden-style) and the tournament
+   outcome tier.
+4. The XI you field deposits into your Binder, where rarity *is* shown as a
+   collection reward.
 
 Cards are **skinned in each country's colours** (kit-style), so the board reads
 like a real squad sheet.
