@@ -143,6 +143,7 @@ body {
 /* --- build: player pool ---------------------------------------------- */
 .build-pitch { max-height: 46vh; }
 .pool { margin-top: 4px; }
+.build-pool { padding-bottom: 12px; }     /* breathing room above the sticky key */
 .pool-group { margin-bottom: 14px; }
 .pool-group .pg-head { display: flex; justify-content: space-between; font-size: 12px; font-weight: 800; letter-spacing: 1px; margin-bottom: 6px; }
 .pool-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); gap: 8px; }
@@ -154,6 +155,29 @@ body {
 .slot.shake { animation: shake .3s; }
 .pool-card.shake { animation: shakeX .3s; }
 @keyframes shakeX { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-5px)} 75%{transform:translateX(5px)} }
+
+/* --- team key, anchored to the bottom of the build screen ------------- */
+.team-key {
+  position: sticky; bottom: 0; left: 0; width: 100%;
+  margin: 0 -16px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(11,16,32,.94); backdrop-filter: blur(10px);
+  border-top: 1px solid var(--line); box-shadow: 0 -8px 24px rgba(0,0,0,.4);
+}
+.team-key .tk-groups { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.team-key .key-group { border: 1px solid var(--line); border-radius: 10px; padding: 6px; background: var(--panel); }
+.team-key .key-group.full { border-color: var(--green); }
+.team-key .kg-head { display: flex; align-items: center; justify-content: space-between; }
+.team-key .kg-label { font-weight: 800; font-size: 12px; }
+.team-key .kg-count { font-size: 10px; color: var(--ink-dim); }
+.team-key .kg-pips { display: flex; gap: 3px; flex-wrap: wrap; margin-top: 5px; }
+.team-key .pip {
+  width: 18px; height: 18px; border-radius: 50%; background: #0007;
+  border: 1px dashed var(--line); display: flex; align-items: center; justify-content: center; font-size: 11px;
+}
+.team-key .pip.on { border: 0; cursor: pointer; font-weight: 800; }
+.team-key .pip.on:hover { outline: 2px solid var(--red); }
+.team-key .tk-actions { display: flex; gap: 10px; margin-top: 10px; }
+.team-key .tk-actions #submit { flex: 1; }
 
 /* --- card ------------------------------------------------------------- */
 /* Country-skinned card. Colours are applied inline per country; the body keeps

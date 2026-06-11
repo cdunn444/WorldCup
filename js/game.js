@@ -54,33 +54,36 @@
   /* =====================================================================
    * Card rendering
    * =================================================================== */
+  // Fantasy-soccer-style stat lines: the numbers managers actually draft on.
+  // 4–5 per position, highest-impact first.
   function statRows(card) {
     const s = card.stats || {};
     const r = (k, v) => `<div class="k">${k}</div><div class="v">${v}</div>`;
     switch (card.position) {
       case 'GK':
-        return r('Matches', s.matches) + r('Clean sheets', s.cleanSheets) +
-               r('Saves/game', s.savesPerGame) + r('Goals against', s.goalsAgainst);
+        return r('Clean sheets', s.cleanSheets) + r('Saves / game', s.savesPerGame) +
+               r('Goals against', s.goalsAgainst) + r('Minutes', s.minutes);
       case 'DEF':
-        return r('Matches', s.matches) + r('Tackles/game', s.tacklesPerGame) +
-               r('Intercept/game', s.interceptionsPerGame) + r('Clean sheets', s.cleanSheets) +
-               r('Goals', s.goalsScored);
+        return r('Goals', s.goalsScored) + r('Clean sheets', s.cleanSheets) +
+               r('Tackles / game', s.tacklesPerGame) + r('Interceptions / game', s.interceptionsPerGame) +
+               r('Minutes', s.minutes);
       case 'MID':
-        return r('Matches', s.matches) + r('Goals', s.goals) + r('Assists', s.assists) +
-               r('Key passes/game', s.keyPassesPerGame) + r('Tackles/game', s.tacklesPerGame);
+        return r('Goals', s.goals) + r('Assists', s.assists) +
+               r('Key passes / game', s.keyPassesPerGame) + r('Tackles / game', s.tacklesPerGame) +
+               r('Minutes', s.minutes);
       case 'FWD':
-        return r('Matches', s.matches) + r('Goals', s.goals) + r('Assists', s.assists) +
-               r('Shots on target', s.shotsOnTarget) + r('Mins/goal', s.minutesPerGoal);
+        return r('Goals', s.goals) + r('Assists', s.assists) +
+               r('Shots on target', s.shotsOnTarget) + r('Mins / goal', s.minutesPerGoal) +
+               r('Minutes', s.minutes);
       default: return '';
     }
   }
 
+  // Individual honours only — no tournament-stage outcomes (those telegraph the
+  // team's run the way rarity used to telegraph value).
   function honorBadges(card) {
     const h = card.honors || {};
     const b = [];
-    if (h.tournamentWinner) b.push('🏆 Champion');
-    else if (h.finalist) b.push('Finalist');
-    else if (h.semifinalist) b.push('Semifinalist');
     if (h.goldenBall) b.push('Golden Ball');
     if (h.goldenBoot) b.push('Golden Boot');
     if (h.allTournament) b.push('All-Tournament');
@@ -102,7 +105,7 @@
         </div>
         <div class="c-body">
           <div class="c-name">${esc(card.name)}</div>
-          <div class="c-sub">${esc(card.country)} · ${card.year} · ${esc(card.stage)}</div>
+          <div class="c-sub">${esc(card.country)} · ${card.year}</div>
           <div class="c-stats">${statRows(card)}</div>
           <div class="c-honors">${honorBadges(card)}</div>
         </div>
@@ -327,17 +330,7 @@
     const ses = S.session;
     topbar('Build your XI', `${xiCount()}/11`);
 
-    const slotsHTML = Rules.FORMATION.map((slot) => {
-      const left = (slot.col + 0.5) * 20, top = ROW_TOP[slot.row];
-      const uid = ses.slots[slot.id];
-      const filled = uid != null;
-      const inner = filled ? miniCardHTML(poolCard(uid)) : `<span>${slot.label}</span>`;
-      return `<div class="slot ${filled ? 'filled' : ''}" data-slot="${slot.id}" style="left:${left}%;top:${top}%">
-                <div class="dot">${inner}</div>
-                ${filled ? '' : `<div class="slot-label">${slot.label}</div>`}
-              </div>`;
-    }).join('');
-
+    // Scrollable pool, grouped by position.
     const placed = new Set(Object.values(ses.slots));
     let poolHTML = '';
     for (const pos of Rules.GROUP_ORDER) {
@@ -356,15 +349,42 @@
     }
 
     screenEl().innerHTML = `
-      <div class="pitch build-pitch">${slotsHTML}</div>
-      <div class="build-bar">
-        <button class="btn green" id="submit" ${xiComplete() ? '' : 'disabled'}>SUBMIT XI · ${xiCount()}/11</button>
-        <button class="btn ghost" id="clear">Clear</button>
-      </div>
-      <div class="section-label">Your players · tap to add · tap a player on the pitch to remove</div>
-      <div class="pool">${poolHTML}</div>`;
+      <div class="section-label">Tap a player to add · tap a slot in the key below to remove</div>
+      <div class="pool build-pool">${poolHTML}</div>
+      ${buildKeyHTML()}`;
 
     wireBuild();
+  }
+
+  // The team key anchored to the bottom of the build screen: the 4-3-3 as
+  // position groups of slots, plus the submit button. Always visible while you
+  // scroll your players.
+  function buildKeyHTML() {
+    const ses = S.session;
+    const groups = Rules.GROUP_ORDER.map((pos) => {
+      const slots = Rules.FORMATION.filter((s) => s.position === pos);
+      const filled = slots.filter((s) => ses.slots[s.id] != null).length;
+      const pips = slots.map((slot) => {
+        const uid = ses.slots[slot.id];
+        if (uid != null) {
+          const c = poolCard(uid);
+          const { primary } = colorsOf(c.country);
+          return `<span class="pip on" data-slot="${slot.id}" title="${esc(c.name)}" style="background:${primary};color:${inkOn(primary)}">${flagOf(c.country)}</span>`;
+        }
+        return `<span class="pip" data-slot="${slot.id}"></span>`;
+      }).join('');
+      return `<div class="key-group ${filled >= slots.length ? 'full' : ''}">
+                <div class="kg-head"><span class="kg-label">${pos}</span><span class="kg-count">${filled}/${slots.length}</span></div>
+                <div class="kg-pips">${pips}</div>
+              </div>`;
+    }).join('');
+    return `<div class="team-key build-key">
+        <div class="tk-groups">${groups}</div>
+        <div class="tk-actions">
+          <button class="btn green" id="submit" ${xiComplete() ? '' : 'disabled'}>SUBMIT XI · ${xiCount()}/11</button>
+          <button class="btn ghost" id="clear">Clear</button>
+        </div>
+      </div>`;
   }
 
   function wireBuild() {
@@ -372,7 +392,7 @@
     screenEl().querySelectorAll('.pool-card').forEach((el) => {
       const uid = +el.dataset.uid;
       el.onclick = () => {
-        if (isPlaced(uid)) { toast('Already in your XI — tap them on the pitch to remove'); return; }
+        if (isPlaced(uid)) { toast('Already in your XI — tap their slot in the key to remove'); return; }
         const card = poolCard(uid);
         if (nameInXI(card.name)) { shake(el); toast(`${card.name} is already on your team`); return; }
         const slot = firstOpenSlot(card.position);
@@ -381,11 +401,9 @@
         showBuild();
       };
     });
-    screenEl().querySelectorAll('.slot').forEach((el) => {
-      el.onclick = () => {
-        const sid = el.dataset.slot;
-        if (ses.slots[sid] != null) { delete ses.slots[sid]; showBuild(); }
-      };
+    // Tap a filled key slot to remove that player.
+    screenEl().querySelectorAll('.team-key .pip.on').forEach((el) => {
+      el.onclick = () => { delete ses.slots[el.dataset.slot]; showBuild(); };
     });
     const submit = $('#submit'); if (submit) submit.onclick = submitXI;
     const clear = $('#clear'); if (clear) clear.onclick = () => { ses.slots = {}; showBuild(); };
