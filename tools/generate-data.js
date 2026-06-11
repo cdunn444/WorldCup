@@ -155,7 +155,7 @@ function makeId(name, year, country) {
 }
 
 const countriesUsed = new Set();
-const manifest = { generatedAt: new Date().toISOString(), totalCards: 0, tournaments: [] };
+const manifest = { totalCards: 0, tournaments: [] };
 
 for (const t of TOURNAMENTS) {
   const teamMatches = {};

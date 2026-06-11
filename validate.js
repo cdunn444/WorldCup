@@ -176,13 +176,8 @@ function bestEleven(hand) {
   const pool = { GK: [], DEF: [], MID: [], FWD: [] };
   for (const c of byName.values()) pool[c.position].push(c);
   for (const k in pool) pool[k].sort((a, b) => Scoring.scoreCard(b) - Scoring.scoreCard(a));
-  if (pool.GK.length < 1 || pool.DEF.length < 4 || pool.MID.length < 3 ||
-      pool.FWD.length < 2 || (pool.MID.length + pool.FWD.length) < 6) return null;
-  const xi = [pool.GK[0], ...pool.DEF.slice(0, 4)];
-  const mid = pool.MID.slice(), fwd = pool.FWD.slice();
-  xi.push(...mid.splice(0, 3), ...fwd.splice(0, 2));
-  const flex = (mid[0] && fwd[0]) ? (Scoring.scoreCard(mid[0]) >= Scoring.scoreCard(fwd[0]) ? mid[0] : fwd[0]) : (mid[0] || fwd[0]);
-  xi.push(flex);
+  if (pool.GK.length < 1 || pool.DEF.length < 4 || pool.MID.length < 3 || pool.FWD.length < 3) return null;
+  const xi = [pool.GK[0], ...pool.DEF.slice(0, 4), ...pool.MID.slice(0, 3), ...pool.FWD.slice(0, 3)];
   return Scoring.scoreTeam(xi.map((c) => ({ card: c, position: c.position })));
 }
 

@@ -48,23 +48,11 @@ function bestEleven(hand) {
   for (const c of byName.values()) pool[c.position].push(c);
   for (const k in pool) pool[k].sort((a, b) => Scoring.scoreCard(b) - Scoring.scoreCard(a));
 
-  if (pool.GK.length < 1 || pool.DEF.length < 4 || pool.MID.length < 3 ||
-      pool.FWD.length < 2 || (pool.MID.length + pool.FWD.length) < 6) {
+  // Clean 4-3-3: 1 GK, 4 DEF, 3 MID, 3 FWD.
+  if (pool.GK.length < 1 || pool.DEF.length < 4 || pool.MID.length < 3 || pool.FWD.length < 3) {
     return null; // can't field a legal XI
   }
-
-  const xi = [];
-  xi.push(pool.GK[0]);
-  xi.push(...pool.DEF.slice(0, 4));
-  const mid = pool.MID.slice();
-  const fwd = pool.FWD.slice();
-  xi.push(...mid.splice(0, 3));
-  xi.push(...fwd.splice(0, 2));
-  // flex: best remaining MID or FWD
-  const flex = (mid[0] && fwd[0]) ? (Scoring.scoreCard(mid[0]) >= Scoring.scoreCard(fwd[0]) ? mid[0] : fwd[0])
-             : (mid[0] || fwd[0]);
-  xi.push(flex);
-
+  const xi = [pool.GK[0], ...pool.DEF.slice(0, 4), ...pool.MID.slice(0, 3), ...pool.FWD.slice(0, 3)];
   return Scoring.scoreTeam(xi.map((c) => ({ card: c, position: c.position })));
 }
 

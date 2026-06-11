@@ -35,6 +35,22 @@
     return (c && c.flag) || '🏳️';
   }
 
+  /* --- country colour skinning ----------------------------------------- */
+  function colorsOf(country) {
+    const c = S.data.countries[country] || {};
+    return { primary: c.primary || '#3a4570', secondary: c.secondary || '#1f2950' };
+  }
+  // Relative luminance of a #rrggbb colour (0 dark … 1 light).
+  function luminance(hex) {
+    const m = /^#?([0-9a-f]{6})$/i.exec(hex || '');
+    if (!m) return 0.5;
+    const n = parseInt(m[1], 16);
+    const r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
+    return (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+  }
+  // Readable ink colour for text sitting on `bg`.
+  function inkOn(bg) { return luminance(bg) > 0.6 ? '#0b1020' : '#ffffff'; }
+
   /* =====================================================================
    * Card rendering
    * =================================================================== */
@@ -72,31 +88,43 @@
     return b.map((x) => `<span class="badge">${esc(x)}</span>`).join('');
   }
 
+  // Full card, skinned in the country's colours. Rarity is intentionally NOT
+  // shown here — knowing the tier would give away which cards to keep.
   function cardHTML(card) {
-    const meta = Rules.RARITY_META[card.rarity];
+    const { primary, secondary } = colorsOf(card.country);
+    const headInk = inkOn(primary);
+    const style = `border-color:${primary};box-shadow:0 10px 30px rgba(0,0,0,.5),0 0 0 2px ${secondary} inset`;
     return `
-      <div class="card r-${card.rarity}" data-id="${card.id}">
-        <div class="c-foil"></div>
-        <div class="c-top">
+      <div class="card kit" data-id="${card.id}" style="${style}">
+        <div class="c-head" style="background:${primary};color:${headInk}">
           <span class="c-flag">${flagOf(card.country)}</span>
-          <span class="c-pos">${card.position}</span>
+          <span class="c-pos" style="border-color:${headInk}">${card.position}</span>
         </div>
-        <div class="c-name">${esc(card.name)}</div>
-        <div class="c-sub">${esc(card.country)} · ${card.year} · ${esc(card.stage)}</div>
-        <div class="c-stats">${statRows(card)}</div>
-        <div class="c-honors">${honorBadges(card)}</div>
-        <div class="c-rarity">${meta.label}</div>
+        <div class="c-body">
+          <div class="c-name">${esc(card.name)}</div>
+          <div class="c-sub">${esc(card.country)} · ${card.year} · ${esc(card.stage)}</div>
+          <div class="c-stats">${statRows(card)}</div>
+          <div class="c-honors">${honorBadges(card)}</div>
+        </div>
+        <div class="c-stripe" style="background:linear-gradient(90deg,${primary},${secondary})"></div>
       </div>`;
   }
 
   function miniCardHTML(card, opts) {
     opts = opts || {};
-    const key = keyStat(card);
+    const { primary, secondary } = colorsOf(card.country);
+    const headInk = inkOn(primary);
+    const dot = opts.showRarity
+      ? `<span class="r-dot" title="${Rules.RARITY_META[card.rarity].label}" style="background:${Rules.RARITY_META[card.rarity].accent}"></span>`
+      : '';
     return `
-      <div class="mini-card r-${card.rarity}">
-        <div class="m-top"><span class="m-flag">${flagOf(card.country)}</span><span>${card.position}</span></div>
+      <div class="mini-card kit" style="border-color:${primary}">
+        ${dot}
+        <div class="m-top" style="background:${primary};color:${headInk}">
+          <span class="m-flag">${flagOf(card.country)}</span><span>${card.position}</span>
+        </div>
         <div class="m-name">${esc(opts.hideName ? '???' : card.name)}</div>
-        <div class="m-bot"><span>${card.year}</span><span>${key}</span></div>
+        <div class="m-bot" style="border-top:2px solid ${secondary}"><span>${card.year}</span><span>${keyStat(card)}</span></div>
       </div>`;
   }
 
@@ -123,7 +151,7 @@
         <div class="trophy">🏆</div>
         <div class="logo">FIFA Card Collector</div>
         <h1>World Cup U</h1>
-        <div class="tag">Open packs · keep the legends · field your XI</div>
+        <div class="tag">Open packs · build your XI live · win the World Cup</div>
         <div class="actions">
           <button class="btn lg green" id="m-play">▶ PLAY</button>
           <button class="btn ghost" id="m-binder">📒 Binder</button>
@@ -165,7 +193,9 @@
   }
 
   /* =====================================================================
-   * SESSION START — roll 3 packs
+   * SESSION START — roll up to 3 packs; assign players to the team key as you
+   * flip. Groups lock when full; the result fires the moment the XI is full
+   * (or the cards run out).
    * =================================================================== */
   function startSession() {
     const seed = (Math.random() * 0xffffffff) >>> 0;
@@ -173,11 +203,26 @@
     S.session = {
       seed, packs,
       packIndex: 0, cardIndex: 0,
-      kept: [],            // array of card objects (dups across packs allowed)
-      packKept: 0, packDiscarded: 0,
+      groups: { GK: [], DEF: [], MID: [], FWD: [] }, // assigned cards by group
+      kept: [],            // flat list of assigned cards (for deposit)
+      packAssigned: 0, packDeclined: 0,
       phase: 'opening',
     };
     showPackIcon();
+  }
+
+  const cap = (pos) => Rules.POSITION_GROUPS[pos];
+  const squadCount = () => S.session.kept.length;
+  const squadFull = () => squadCount() >= 11;
+  function nameOnTeam(name) {
+    return S.session.kept.some((c) => c.name === name);
+  }
+  // How a card may interact with its position group right now.
+  function assignState(card) {
+    const g = S.session.groups[card.position];
+    if (g.length >= cap(card.position)) return 'full';   // group locked
+    if (nameOnTeam(card.name)) return 'dup';             // player already in XI
+    return 'open';                                        // assignable
   }
 
   function seenCount() {
@@ -190,7 +235,7 @@
 
   function showPackIcon() {
     const ses = S.session;
-    topbar(`Pack ${ses.packIndex + 1} of ${Rules.NUM_PACKS}`, `Kept ${ses.kept.length}`);
+    topbar(`Pack ${ses.packIndex + 1} of ${Rules.NUM_PACKS}`, `XI ${squadCount()}/11`);
     screenEl().innerHTML = `
       <div class="pack-stage">
         ${hudHTML()}
@@ -198,19 +243,18 @@
           <div class="pk-emoji">🎴</div>
           <div class="pk-label">PACK ${ses.packIndex + 1}</div>
         </div>
-        <p class="muted center">Tap the pack to open · 10 cards · keep or discard each</p>
+        <p class="muted center">Tap the pack to open · 10 cards · assign each to your XI or decline</p>
       </div>`;
-    $('#pack-icon').onclick = () => { ses.cardIndex = 0; ses.packKept = 0; ses.packDiscarded = 0; revealCard(); };
+    $('#pack-icon').onclick = () => { ses.cardIndex = 0; ses.packAssigned = 0; ses.packDeclined = 0; revealCard(); };
   }
 
   function hudHTML() {
-    const ses = S.session;
-    const pct = (seenCount() / totalCards()) * 100;
+    const pct = (squadCount() / 11) * 100;
     return `
       <div style="width:100%">
         <div class="hud">
           <span class="pill">Cards seen: <b>${seenCount()}</b> / ${totalCards()}</span>
-          <span class="pill">Kept: <b>${ses.kept.length}</b></span>
+          <span class="pill">Squad: <b>${squadCount()}</b> / 11</span>
         </div>
         <div class="progress"><i style="width:${pct}%"></i></div>
       </div>`;
@@ -220,264 +264,166 @@
     const ses = S.session;
     const pack = ses.packs[ses.packIndex];
     const card = pack[ses.cardIndex];
-    topbar(`Pack ${ses.packIndex + 1} of ${Rules.NUM_PACKS}`, `Kept ${ses.kept.length}`);
+    const state = assignState(card);
+    const hint = state === 'open' ? `Tap ${card.position} below to add`
+               : state === 'full' ? `${card.position} is full — decline`
+               : 'Already on your team — decline';
+    topbar(`Pack ${ses.packIndex + 1} of ${Rules.NUM_PACKS}`, `XI ${squadCount()}/11`);
     screenEl().innerHTML = `
       <div class="pack-stage">
         ${hudHTML()}
         <div class="reveal-area">
           <div id="card-host" class="flip-in">${cardHTML(card)}</div>
+          <div class="assign-hint ${state}">${hint}</div>
           <div class="kd-buttons">
-            <button class="btn green" id="btn-keep">KEEP</button>
-            <button class="btn red" id="btn-discard">DISCARD</button>
+            <button class="btn red" id="btn-decline">DECLINE</button>
           </div>
         </div>
-        ${keptTrayHTML()}
+        ${teamKeyHTML(card)}
       </div>`;
-    $('#btn-keep').onclick = () => decide(true);
-    $('#btn-discard').onclick = () => decide(false);
-    wireThumbs();
+    $('#btn-decline').onclick = () => resolveCard(null);
+    wireTeamKey(card);
   }
 
-  function keptTrayHTML() {
-    const ses = S.session;
-    if (!ses.kept.length) return `<div class="kept-tray"><div class="tray-label">Kept cards appear here</div></div>`;
-    const thumbs = ses.kept.map((c, i) =>
-      `<div class="thumb" data-i="${i}" title="${esc(c.name)}">${flagOf(c.country)}<span class="tpos">${c.position}</span></div>`
-    ).join('');
-    return `<div class="kept-tray"><div class="tray-label">Kept (${ses.kept.length}) · tap to peek</div><div class="thumbs">${thumbs}</div></div>`;
+  /* The anchored team key: 4 position groups with capacity pips. The current
+   * card's group lights up; tapping it assigns the card. */
+  function teamKeyHTML(card) {
+    const groups = Rules.GROUP_ORDER.map((pos) => {
+      const assigned = S.session.groups[pos];
+      const capacity = cap(pos);
+      const isCurrent = card && card.position === pos;
+      const state = isCurrent ? assignState(card) : '';
+      const cls = ['key-group'];
+      if (isCurrent) cls.push('lit', 'lit-' + state);
+      if (assigned.length >= capacity) cls.push('full');
+
+      let pips = '';
+      for (let i = 0; i < capacity; i++) {
+        const c = assigned[i];
+        pips += c
+          ? `<span class="pip on" style="background:${colorsOf(c.country).primary};color:${inkOn(colorsOf(c.country).primary)}">${flagOf(c.country)}</span>`
+          : `<span class="pip"></span>`;
+      }
+      const tag = isCurrent && state === 'open' ? '＋'
+                : isCurrent && state === 'full' ? '🔒'
+                : isCurrent && state === 'dup' ? '⛔' : '';
+      return `<div class="${cls.join(' ')}" data-group="${pos}">
+                <div class="kg-head"><span class="kg-label">${pos}</span><span class="kg-count">${assigned.length}/${capacity}</span><span class="kg-tag">${tag}</span></div>
+                <div class="kg-pips">${pips}</div>
+              </div>`;
+    }).join('');
+    return `<div class="team-key"><div class="tk-title">YOUR XI · tap a glowing position to add</div><div class="tk-groups">${groups}</div></div>`;
   }
 
-  function wireThumbs() {
-    screenEl().querySelectorAll('.thumb').forEach((t) => {
-      t.onclick = () => {
-        const c = S.session.kept[+t.dataset.i];
-        openCardModal(c);
+  function wireTeamKey(card) {
+    screenEl().querySelectorAll('.key-group').forEach((el) => {
+      const pos = el.dataset.group;
+      el.onclick = () => {
+        if (card.position !== pos) { toast(`That's a ${card.position} — add to ${card.position}`); return; }
+        const state = assignState(card);
+        if (state === 'full') { shake(el); toast(`${pos} is full`); return; }
+        if (state === 'dup') { shake(el); toast(`${card.name} is already on your team`); return; }
+        resolveCard(pos);
       };
     });
   }
 
-  function decide(keep) {
+  function shake(el) { el.classList.add('shake'); setTimeout(() => el.classList.remove('shake'), 320); }
+
+  // Resolve the current card: assign to `pos` (group) or decline (pos == null).
+  function resolveCard(pos) {
     const ses = S.session;
     const pack = ses.packs[ses.packIndex];
     const card = pack[ses.cardIndex];
     const host = $('#card-host');
-    if (keep) { ses.kept.push(card); ses.packKept++; host.classList.add('kept-fly'); }
-    else { ses.packDiscarded++; host.classList.add('discard-fade'); }
 
-    // Disable buttons during the brief animation.
-    $('#btn-keep').disabled = true; $('#btn-discard').disabled = true;
+    if (pos) {
+      ses.groups[pos].push(card);
+      ses.kept.push(card);
+      ses.packAssigned++;
+      host.classList.add('kept-fly');
+    } else {
+      ses.packDeclined++;
+      host.classList.add('discard-fade');
+    }
+    const decline = $('#btn-decline'); if (decline) decline.disabled = true;
 
     setTimeout(() => {
+      // XI complete -> straight to the result, no matter how many cards remain.
+      if (squadFull()) { finalize(); return; }
       ses.cardIndex++;
-      if (ses.cardIndex >= pack.length) showPackSummary();
-      else revealCard();
+      if (ses.cardIndex >= pack.length) {
+        const last = ses.packIndex >= Rules.NUM_PACKS - 1;
+        if (last) finalize();          // out of cards
+        else showPackSummary();
+      } else {
+        revealCard();
+      }
     }, 320);
   }
 
   function showPackSummary() {
     const ses = S.session;
-    const last = ses.packIndex >= Rules.NUM_PACKS - 1;
     topbar(`Pack ${ses.packIndex + 1} complete`);
     screenEl().innerHTML = `
       <div class="summary">
         <h2>Pack ${ses.packIndex + 1} complete</h2>
-        <div class="big">✅ ${ses.packKept} &nbsp; ❌ ${ses.packDiscarded}</div>
-        <p class="muted">Kept ${ses.packKept}, discarded ${ses.packDiscarded}. Total kept so far: <b>${ses.kept.length}</b>.</p>
-        <div class="mt"><button class="btn lg" id="next">${last ? 'Build your team →' : 'Open Pack ' + (ses.packIndex + 2) + ' →'}</button></div>
+        <div class="big">＋ ${ses.packAssigned} &nbsp; ✕ ${ses.packDeclined}</div>
+        <p class="muted">Added ${ses.packAssigned}, declined ${ses.packDeclined}. Squad so far: <b>${squadCount()}</b> / 11.</p>
+        <div class="mt"><button class="btn lg" id="next">Open Pack ${ses.packIndex + 2} →</button></div>
       </div>`;
-    $('#next').onclick = () => {
-      if (last) startBuild();
-      else { ses.packIndex++; showPackIcon(); }
-    };
+    $('#next').onclick = () => { ses.packIndex++; showPackIcon(); };
   }
 
   /* =====================================================================
-   * TEAM BUILD
+   * FINALIZE + RESULT
+   * The XI is built live during the flip. When it's full (or the cards run
+   * out) we score it straight away — no separate build screen.
    * =================================================================== */
-  function startBuild() {
-    const ses = S.session;
-    ses.phase = 'build';
-    ses.hand = ses.kept.map((card, uid) => ({ uid, card }));
-    ses.slots = {};            // slotId -> uid
-    ses.selectedUid = null;
-    showBuild();
-  }
-
-  function positionCounts(cards) {
-    const c = { GK: 0, DEF: 0, MID: 0, FWD: 0 };
-    const seen = { GK: new Set(), DEF: new Set(), MID: new Set(), FWD: new Set() };
-    for (const card of cards) seen[card.position] && seen[card.position].add(card.name);
-    for (const k in seen) c[k] = seen[k].size;
-    return c;
-  }
-
-  function canFieldTeam() {
-    const c = positionCounts(S.session.kept);
-    const need = Rules.POSITION_REQUIREMENTS;
-    const flexOk = (c.MID + c.FWD) >= (need.MID + need.FWD + 1);
-    return c.GK >= need.GK && c.DEF >= need.DEF && c.MID >= need.MID && c.FWD >= need.FWD && flexOk;
-  }
-
   const ROW_TOP = [88, 67, 45, 22];
 
-  function showBuild() {
+  // Pair the assigned cards with on-pitch formation slots, in group order.
+  function buildPlacements() {
     const ses = S.session;
-    topbar('Build your XI', `${ses.kept.length} cards`);
-    const slotsHTML = Rules.FORMATION.map((slot) => {
-      const left = (slot.col + 0.5) * 20;
-      const top = ROW_TOP[slot.row];
-      const uid = ses.slots[slot.id];
-      const filled = uid != null;
-      const inner = filled
-        ? miniCardHTML(ses.hand[uid].card)
-        : `<span>${slot.label}</span>`;
-      return `<div class="slot ${filled ? 'filled' : ''}" data-slot="${slot.id}" style="left:${left}%;top:${top}%">
-                <div class="dot">${inner}</div>
-                <div class="slot-label">${slot.label}</div>
-              </div>`;
-    }).join('');
-
-    const placedUids = new Set(Object.values(ses.slots));
-    const handHTML = ses.hand.map((h) => {
-      const placed = placedUids.has(h.uid);
-      return `<div class="hand-card ${placed ? 'placed' : ''} ${ses.selectedUid === h.uid ? 'selected' : ''}"
-                   data-uid="${h.uid}" draggable="${!placed}">${miniCardHTML(h.card)}</div>`;
-    }).join('');
-
-    const complete = isComplete();
-    const fieldable = canFieldTeam();
-
-    screenEl().innerHTML = `
-      <div class="pitch">${slotsHTML}</div>
-      <div class="build-bar">
-        <button class="btn green" id="submit" ${complete ? '' : 'disabled'}>SUBMIT TEAM</button>
-        <button class="btn ghost" id="clear">Clear</button>
-      </div>
-      ${!fieldable ? forfeitNoticeHTML() : ''}
-      <div class="section-label">Your hand · tap a card then tap a slot (or drag)</div>
-      <div class="hand">${handHTML || '<p class="muted">You kept no cards.</p>'}</div>`;
-
-    wireBuild();
+    const queue = { GK: ses.groups.GK.slice(), DEF: ses.groups.DEF.slice(),
+                    MID: ses.groups.MID.slice(), FWD: ses.groups.FWD.slice() };
+    const placements = [];
+    for (const slot of Rules.FORMATION) {
+      const card = queue[slot.position].shift();
+      if (card) placements.push({ card, position: card.position, slot });
+    }
+    return placements;
   }
 
-  function forfeitNoticeHTML() {
-    const c = positionCounts(S.session.kept);
+  function missingPositions() {
     const need = Rules.POSITION_REQUIREMENTS;
-    const missing = [];
-    if (c.GK < need.GK) missing.push('a goalkeeper');
-    if (c.DEF < need.DEF) missing.push(`${need.DEF} defenders (have ${c.DEF})`);
-    if (c.MID < need.MID) missing.push(`${need.MID} midfielders (have ${c.MID})`);
-    if (c.FWD < need.FWD) missing.push(`${need.FWD} forwards (have ${c.FWD})`);
-    if ((c.MID + c.FWD) < need.MID + need.FWD + 1) missing.push('enough MID/FWD for the flex slot');
-    return `
-      <div class="hud" style="display:block;border-color:var(--red)">
-        <b>Cannot field a full team.</b> You're missing ${missing.join(', ')}.
-        <div class="grid-2 mt">
-          <button class="btn red" id="dnq">Submit anyway (Did Not Qualify)</button>
-          <button class="btn ghost" id="cancel">Cancel session</button>
-        </div>
-        <div class="muted mt">Either way, your kept cards still deposit to your collection.</div>
-      </div>`;
-  }
-
-  function isComplete() {
-    return Rules.FORMATION.every((s) => S.session.slots[s.id] != null);
-  }
-
-  function slotById(id) { return Rules.FORMATION.find((s) => s.id === id); }
-
-  function canPlace(uid, slotId) {
-    const ses = S.session;
-    const card = ses.hand[uid].card;
-    const slot = slotById(slotId);
-    if (!slot.accepts.includes(card.position)) return { ok: false, reason: 'Wrong position for this slot' };
-    for (const sid in ses.slots) {
-      if (sid === slotId) continue;
-      const other = ses.hand[ses.slots[sid]];
-      if (other && other.card.name === card.name) return { ok: false, reason: 'Already on team' };
+    const out = [];
+    for (const pos of Rules.GROUP_ORDER) {
+      const have = S.session.groups[pos].length;
+      if (have < need[pos]) out.push(`${need[pos] - have} ${pos}`);
     }
-    return { ok: true };
+    return out;
   }
 
-  function placeCard(uid, slotId) {
+  function finalize() {
     const ses = S.session;
-    // If this card is already in another slot, vacate it.
-    for (const sid in ses.slots) if (ses.slots[sid] === uid) delete ses.slots[sid];
-    ses.slots[slotId] = uid;
-    ses.selectedUid = null;
-    showBuild();
-  }
-
-  function wireBuild() {
-    const ses = S.session;
-    // hand selection + drag
-    screenEl().querySelectorAll('.hand-card').forEach((el) => {
-      const uid = +el.dataset.uid;
-      if (el.classList.contains('placed')) return;
-      el.onclick = () => { ses.selectedUid = ses.selectedUid === uid ? null : uid; showBuild(); };
-      el.ondragstart = (e) => { e.dataTransfer.setData('text/uid', String(uid)); ses.selectedUid = uid; };
-    });
-    // slots
-    screenEl().querySelectorAll('.slot').forEach((el) => {
-      const slotId = el.dataset.slot;
-      el.onclick = () => {
-        const uid = ses.slots[slotId];
-        if (uid != null) { delete ses.slots[slotId]; showBuild(); return; } // tap placed card to clear
-        if (ses.selectedUid == null) { toast('Pick a card first'); return; }
-        tryPlace(ses.selectedUid, slotId, el);
-      };
-      el.ondragover = (e) => {
-        const uid = ses.selectedUid;
-        if (uid != null && canPlace(uid, slotId).ok) { e.preventDefault(); el.classList.add('valid-target'); }
-      };
-      el.ondragleave = () => el.classList.remove('valid-target');
-      el.ondrop = (e) => {
-        e.preventDefault(); el.classList.remove('valid-target');
-        const uid = +(e.dataTransfer.getData('text/uid') || ses.selectedUid);
-        tryPlace(uid, slotId, el);
-      };
-    });
-
-    const submit = $('#submit'); if (submit) submit.onclick = submitTeam;
-    const clear = $('#clear'); if (clear) clear.onclick = () => { ses.slots = {}; ses.selectedUid = null; showBuild(); };
-    const dnq = $('#dnq'); if (dnq) dnq.onclick = () => submitTeam(true);
-    const cancel = $('#cancel'); if (cancel) cancel.onclick = () => { depositAndEnd('cancelled'); showMenu(); };
-  }
-
-  function tryPlace(uid, slotId, el) {
-    const res = canPlace(uid, slotId);
-    if (!res.ok) {
-      el.classList.add('shake');
-      toast(res.reason);
-      setTimeout(() => el.classList.remove('shake'), 320);
-      return;
-    }
-    placeCard(uid, slotId);
-  }
-
-  /* =====================================================================
-   * SUBMIT + RESULT
-   * =================================================================== */
-  function submitTeam(forfeit) {
-    const ses = S.session;
-    if (!forfeit && !isComplete()) { toast('Fill all 11 slots'); return; }
-
     let result;
-    if (forfeit) {
-      result = { outcome: 'dnq', outcomeLabel: 'Did Not Qualify', attackRating: null, defendRating: null, percentile: 0 };
-      result.team = { attack: 0, defend: 0, total: 0 };
-      result.placements = [];
-    } else {
-      const placements = Rules.FORMATION.map((slot) => {
-        const card = ses.hand[ses.slots[slot.id]].card;
-        return { card, position: card.position };
-      });
+    if (squadFull()) {
+      const placements = buildPlacements();
       const team = Scoring.scoreTeam(placements);
       const evald = Scoring.evaluateOutcome(team, S.data.calibration);
       result = Object.assign({ team, placements }, evald);
+    } else {
+      result = {
+        outcome: 'dnq', outcomeLabel: 'Did Not Qualify',
+        attackRating: null, defendRating: null, percentile: 0,
+        team: { attack: 0, defend: 0, total: 0 },
+        placements: buildPlacements(),
+        missing: missingPositions(),
+      };
     }
 
-    // Deposit + record once.
+    // Deposit + record once, at session end.
     const keptIds = ses.kept.map((c) => c.id);
     const teamSnapshot = result.placements.map((p) => p.card.id);
     Collection.depositSession(S.collection, {
@@ -511,26 +457,32 @@
   }
 
   function showResult(result) {
-    const ses = S.session;
     topbar('Result');
-    const tierClass = result.outcome === 'dnq' ? 'tier-dnq' : `tier-${result.outcome}`;
-    const ratings = result.outcome === 'dnq'
-      ? `<p class="muted">Your squad couldn't field a legal XI, so it did not qualify. The cards are yours to keep.</p>`
+    const dnq = result.outcome === 'dnq';
+    const tierClass = dnq ? 'tier-dnq' : `tier-${result.outcome}`;
+    const ratings = dnq
+      ? `<p class="muted">You couldn't complete a full XI${result.missing && result.missing.length ? ` (short ${result.missing.join(', ')})` : ''}, so your squad did not qualify. Every player you added is still yours to keep.</p>`
       : `<div class="ratings">
            <div class="rating-box attack"><div class="rlabel">ATTACK</div><div class="rval">${result.attackRating}</div></div>
            <div class="rating-box defend"><div class="rlabel">DEFEND</div><div class="rval">${result.defendRating}</div></div>
          </div>
          <div class="meta">Team total ${result.team.total} · top ${Math.round((1 - result.percentile) * 100)}% of simulated squads</div>`;
 
-    const teamCards = (result.placements || []).map((p) =>
-      `<div class="binder-card" data-id="${p.card.id}">${miniCardHTML(p.card)}</div>`).join('');
+    // On-pitch layout of the placed XI.
+    const slots = (result.placements || []).map((p) => {
+      const left = (p.slot.col + 0.5) * 20;
+      const top = ROW_TOP[p.slot.row];
+      return `<div class="slot filled" data-id="${p.card.id}" style="left:${left}%;top:${top}%">
+                <div class="dot">${miniCardHTML(p.card)}</div>
+              </div>`;
+    }).join('');
 
     screenEl().innerHTML = `
       <div class="result ${tierClass}">
         <div class="outcome-label">Your tournament ends as</div>
         <div class="outcome">${esc(result.outcomeLabel)}</div>
         ${ratings}
-        ${teamCards ? `<div class="section-label">Your XI</div><div class="result-team">${teamCards}</div>` : ''}
+        ${slots ? `<div class="section-label">Your XI</div><div class="pitch result-pitch">${slots}</div>` : ''}
         <div class="grid-2 mt">
           <button class="btn green" id="again">Play again</button>
           <button class="btn ghost" id="tomenu">Main menu</button>
@@ -538,7 +490,7 @@
         <div class="mt"><button class="btn ghost full" id="tobinder">View binder</button></div>
       </div>`;
 
-    screenEl().querySelectorAll('.result-team .binder-card').forEach((el) => {
+    screenEl().querySelectorAll('.result-pitch .slot').forEach((el) => {
       el.onclick = () => openCardModal(S.data.byId[el.dataset.id]);
     });
     $('#again').onclick = () => { S.session = null; startSession(); };
@@ -617,7 +569,7 @@
     const grid = cards.map((c) => {
       const own = Collection.owned(S.collection, c.id);
       return `<div class="binder-card ${own ? '' : 'unowned'}" data-id="${c.id}">
-                ${miniCardHTML(c, { hideName: !own })}
+                ${miniCardHTML(c, { hideName: !own, showRarity: !!own })}
                 ${own > 1 ? `<span class="owned-x">×${own}</span>` : ''}
               </div>`;
     }).join('');
@@ -698,11 +650,11 @@
       <button class="btn ghost close" style="padding:6px 10px">✕</button>
       <h3>How to play</h3>
       <ol style="line-height:1.6;padding-left:18px">
-        <li>Open <b>3 packs</b> of 10 cards. For each card, <b>KEEP</b> or <b>DISCARD</b> before the next is revealed.</li>
-        <li>From everything you kept, fill an <b>11-player XI</b>: 1 GK, 4 DEF, 3 MID, 2 FWD, and 1 flex (MID or FWD).</li>
-        <li>One slot per player <b>name</b> — no two versions of the same player.</li>
-        <li><b>SUBMIT</b> to score your Attack & Defend ratings and see how deep your tournament run goes.</li>
-        <li>Every kept card — used or not — is deposited into your <b>Binder</b>.</li>
+        <li>Open up to <b>3 packs</b> of 10 cards. Flip them one at a time.</li>
+        <li>Your XI sits in the <b>team key</b> at the bottom: 1 GK, 4 DEF, 3 MID, 3 FWD. The card's position lights up — <b>tap it to add</b> the player, or <b>DECLINE</b> to skip. Every choice is final.</li>
+        <li>A group <b>locks</b> once it's full, and one slot per player <b>name</b>.</li>
+        <li>The instant your XI is complete you get your <b>Attack & Defend</b> ratings and tournament result. Run out of cards first and you <b>Did Not Qualify</b>.</li>
+        <li>Every player you added lands in your <b>Binder</b>.</li>
       </ol>
       <button class="btn full mt close">Got it</button>
     `);

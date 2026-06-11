@@ -1,10 +1,11 @@
 # World Cup U ⚽🏆
 
-A web-based World Cup **card-collection game**. Open three packs, decide
-**KEEP** or **DISCARD** on each card one at a time, then assemble an 11-player
-XI from everything you kept. Your roster's Attack and Defend ratings decide how
-deep your tournament run goes — from *Did Not Qualify* all the way to *World Cup
-Champion*. Every kept card lands in your permanent **Binder**.
+A web-based World Cup **card-collection game**. Flip through packs and build a
+4-3-3 XI **live** — as each card is revealed, its position lights up in the team
+key at the bottom of the screen; tap it to add the player or decline to skip.
+Every choice is final. The instant your XI is full, your Attack and Defend
+ratings decide how deep your tournament run goes — from *Did Not Qualify* all
+the way to *World Cup Champion*. Every player you add lands in your **Binder**.
 
 Built per [`requirements`](#) as vanilla **HTML/CSS/JS** with no framework, all
 data loaded from JSON at runtime, and deployable straight to **GitHub Pages**.
@@ -30,20 +31,24 @@ To deploy: push to GitHub and enable **Pages** for the branch — the root
 
 ## Game loop
 
-1. **PLAY** → open Pack 1, reveal 10 cards one at a time; KEEP or DISCARD each
-   before the next is shown.
-2. Repeat for Pack 2 and Pack 3 (30 cards seen total).
-3. **Build your XI** — drag or tap kept cards into the formation:
-   `1 GK · 4 DEF · 3 MID · 2 FWD · 1 MID/FWD flex`.
-   - Position must match the slot (the flex slot takes MID *or* FWD).
-   - One slot per player **name** (no two versions of the same player).
-4. **SUBMIT** → see your Attack/Defend ratings (45–99, Madden-style) and the
-   tournament outcome tier.
-5. All kept cards — used or not — deposit into your Binder. Discards are gone
-   for that session.
+1. **PLAY** → open a pack and flip cards one at a time.
+2. The **team key** anchored at the bottom holds your 4-3-3:
+   `1 GK · 4 DEF · 3 MID · 3 FWD`. The current card's position group lights up.
+   - **Tap the glowing group** to add the player, or **DECLINE** to skip.
+     Every choice is final — there's no undo and no rearranging.
+   - A group **locks** once it's full; further cards of that position can only
+     be declined. One player **name** per XI (no two versions of a player).
+   - Card **rarity is hidden** during play, so you judge on stats and honors
+     alone — not on a colour that gives the answer away.
+3. The **moment your XI is complete**, you get your Attack/Defend ratings
+   (45–99, Madden-style) and the tournament outcome — no separate build step.
+   Up to 3 packs (30 cards); run out before filling the XI and you
+   **Did Not Qualify**.
+4. Every player you added deposits into your Binder, where rarity *is* shown as
+   a collection reward.
 
-If you can't field a legal XI (e.g. you kept no goalkeeper) you may submit for a
-**Did Not Qualify** result or cancel — either way the cards still deposit.
+Cards are **skinned in each country's colours** (kit-style), so the board reads
+like a real squad sheet.
 
 ---
 

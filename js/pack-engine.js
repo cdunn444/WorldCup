@@ -140,7 +140,9 @@
         cards.push(card);
       }
     }
-    return cards;
+    // 5) Randomize reveal order so the "stud" slot isn't always revealed last
+    //    and players can't infer card quality from its position in the pack.
+    return shuffle(cards, rng);
   }
 
   /* =====================================================================

@@ -160,35 +160,37 @@
 
   /* =====================================================================
    * Formation — 11 slots. The flex slot accepts MID or FWD.
-   * Sums to 11: 1 GK + 4 DEF + 3 MID + 2 FWD + 1 FLEX.
-   * `accepts` lists which card positions the slot will take.
-   * `row` drives the on-pitch layout (0 = keeper line at the back).
+   * Clean 4-3-3 (sums to 11): 1 GK + 4 DEF + 3 MID + 3 FWD. Each slot belongs
+   * to exactly one position group; players are assigned by group during the
+   * pack flip. `row` drives the on-pitch layout (0 = keeper line at the back).
    * =================================================================== */
   const FORMATION = [
-    { id: 'GK',    label: 'GK',   accepts: ['GK'],          row: 0, col: 2 },
+    { id: 'GK',    label: 'GK',   position: 'GK',   row: 0, col: 2 },
 
-    { id: 'LB',    label: 'LB',   accepts: ['DEF'],         row: 1, col: 0 },
-    { id: 'LCB',   label: 'CB',   accepts: ['DEF'],         row: 1, col: 1 },
-    { id: 'RCB',   label: 'CB',   accepts: ['DEF'],         row: 1, col: 3 },
-    { id: 'RB',    label: 'RB',   accepts: ['DEF'],         row: 1, col: 4 },
+    { id: 'LB',    label: 'LB',   position: 'DEF',  row: 1, col: 0 },
+    { id: 'LCB',   label: 'CB',   position: 'DEF',  row: 1, col: 1 },
+    { id: 'RCB',   label: 'CB',   position: 'DEF',  row: 1, col: 3 },
+    { id: 'RB',    label: 'RB',   position: 'DEF',  row: 1, col: 4 },
 
-    { id: 'LCM',   label: 'CM',   accepts: ['MID'],         row: 2, col: 1 },
-    { id: 'CM',    label: 'CM',   accepts: ['MID'],         row: 2, col: 2 },
-    { id: 'RCM',   label: 'CM',   accepts: ['MID'],         row: 2, col: 3 },
+    { id: 'LCM',   label: 'CM',   position: 'MID',  row: 2, col: 1 },
+    { id: 'CM',    label: 'CM',   position: 'MID',  row: 2, col: 2 },
+    { id: 'RCM',   label: 'CM',   position: 'MID',  row: 2, col: 3 },
 
-    { id: 'LW',    label: 'FWD',  accepts: ['FWD'],         row: 3, col: 1 },
-    { id: 'ST',    label: 'FWD',  accepts: ['FWD'],         row: 3, col: 3 },
-    { id: 'FLEX',  label: 'M/F',  accepts: ['MID', 'FWD'],  row: 3, col: 2 },
+    { id: 'LW',    label: 'LW',   position: 'FWD',  row: 3, col: 1 },
+    { id: 'ST',    label: 'ST',   position: 'FWD',  row: 3, col: 2 },
+    { id: 'RW',    label: 'RW',   position: 'FWD',  row: 3, col: 3 },
   ];
 
   const FORMATION_ROWS = 4; // GK, DEF, MID, FWD lines
   const FORMATION_COLS = 5;
 
-  /** Minimum cards of each position required to even fill the formation. */
-  const POSITION_REQUIREMENTS = (function () {
-    // Flex can be MID or FWD; the hard minimums are the non-flex slots.
-    return { GK: 1, DEF: 4, MID: 3, FWD: 2 }; // + 1 flex (MID or FWD)
-  })();
+  // Position groups + capacities. Players are slotted into a group during the
+  // flip; a group locks once it reaches capacity.
+  const GROUP_ORDER = ['GK', 'DEF', 'MID', 'FWD'];
+  const POSITION_GROUPS = { GK: 1, DEF: 4, MID: 3, FWD: 3 };
+
+  /** Minimum cards of each position required to field a full XI. */
+  const POSITION_REQUIREMENTS = { GK: 1, DEF: 4, MID: 3, FWD: 3 };
 
   /* =====================================================================
    * Pack composition rules.
@@ -254,6 +256,7 @@
     HONOR_BONUS, minutesFactor, baseScore, honorBonus, cardScore,
     POSITION_WEIGHTS,
     FORMATION, FORMATION_ROWS, FORMATION_COLS, POSITION_REQUIREMENTS,
+    GROUP_ORDER, POSITION_GROUPS,
     PACK_SIZE, PACK_POSITION_QUOTA, packSlotRarityTable, PACK_BONUS, NUM_PACKS,
     OUTCOME_TIERS, RATING_MIN, RATING_MAX,
   };
